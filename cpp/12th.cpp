@@ -4,16 +4,16 @@ using namespace std;
 
 int main()
 {
-    int a,b,c=1,i;
+    int base,exponent,result=1;
     cout<< "///Program to calculate power///"<<endl<<endl<<endl;
-    cout<< "Enter number: ";
-    cin>> a;
-    cout<< "Enter power: ";
-    cin>> b;
-    while(b!=0)
+    cout<< "Enter base: ";
+    cin>> base;
+    cout<< "Enter exponent: ";
+    cin>> exponent;
+    while(exponent!=0)
     {
-        c*=a;
-        --b;
+        result*=base;
+        --exponent;
     }
     cout<< "Result is: "<< c;
     return 0;
