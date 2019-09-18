@@ -7,7 +7,7 @@ int main()
 {
   float a, b;
   cout << "///Program to divide two numbers///" << endl << endl << endl;
-  cout << "Enter first dividend: ";
+  cout << "Enter dividend: ";
   cin >> a;
   cout << "Enter divisor: ";
   cin >> b;

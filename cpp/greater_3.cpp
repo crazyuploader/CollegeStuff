@@ -3,8 +3,7 @@ using namespace std;
 #define NEWLINE '\n'
 #define TAB '\t'
 
-int
-main ()
+int main ()
 {
   int a, b, c;
   cout << "///Program to display greatest number///" << endl << endl << endl;
