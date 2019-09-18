@@ -15,7 +15,7 @@ int main()
         result*=base;
         --exponent;
     }
-    cout<< "Result is: "<< c;
+    cout<< "Answer = "<< c;
     cout<< "\n\n\nCreated by Jugal Kishore -- 2019\n\n";
     return 0;
 }
