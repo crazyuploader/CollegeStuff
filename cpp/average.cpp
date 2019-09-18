@@ -1,8 +1,10 @@
 #include<iostream>
-
 using namespace std;
+#define NEWLINE '\n'
+#define TAB '\t'
 
-int main() {
+int main()
+{
   int a[20], i, n;
   float avg = 0;
   cout << "///Program to display average of entered n numbers///" << endl << endl << endl;
@@ -14,6 +16,6 @@ int main() {
     avg = avg + a[i];
   }
   cout << "Average of " << n << " number(s) is: " << avg / n;
-  cout<< "\n\n\nCreated by Jugal Kishore -- 2019\n\n";
+  cout<< NEWLINE<< NEWLINE<< "Created by Jugal Kishore -- 2019"<< NEWLINE;
   return 0;
 }
