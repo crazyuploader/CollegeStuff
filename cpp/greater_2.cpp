@@ -1,6 +1,7 @@
 #include<iostream>
-
 using namespace std;
+#define NEWLINE '\n'
+#define TAB '\t'
 
 int main() {
   int a, b;
@@ -12,6 +13,6 @@ int main() {
   cin >> b;
   cout << "Entered number is: " << b << endl;
   (a == b) ? cout << "Entered number are equal":(a>b)?cout<<"Greater number is: "<<a: cout << "Greater number is: " << b;
-  cout<< "\n\n\nCreated by Jugal Kishore -- 2019\n\n";
+  cout<< NEWLINE<< NEWLINE<< "Created by Jugal Kishore -- 2019"<< NEWLINE;
   return 0;
 }

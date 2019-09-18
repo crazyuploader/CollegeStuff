@@ -1,6 +1,5 @@
 #include<iostream>
 using namespace std;
-
 #define NEWLINE '\n'
 #define TAB '\t'
 
@@ -15,5 +14,6 @@ int main()
         fac=fac*i;
     }
     cout<< NEWLINE<< "Factorial of "<< n<< " is "<< fac<< NEWLINE;
+    cout<< NEWLINE<< NEWLINE<< "Created by Jugal Kishore -- 2019"<< NEWLINE;
     return 0;
 }

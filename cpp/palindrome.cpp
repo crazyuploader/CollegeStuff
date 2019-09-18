@@ -1,5 +1,7 @@
 #include<iostream>
 using namespace std;
+#define NEWLINE '\n'
+#define TAB '\t'
 
 int main()
 {
