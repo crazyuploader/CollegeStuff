@@ -3,7 +3,8 @@ using namespace std;
 #define NEWLINE '\n'
 #define TAB '\t'
 
-int main() {
+int main()
+{
   int a, b;
   cout << "///Program to display greater number///" << endl << endl << endl;
   cout << "Enter first number: ";
