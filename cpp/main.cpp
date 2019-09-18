@@ -36,17 +36,20 @@ int main()
  int choice;
  while(1)
  {
- cout<< "Enter choice: ";
- cin>> choice;
- switch(choice)
- {
+   system ("CLS");
+   cout<< "///Main Program///"<<endl<<endl<<endl;
+   cout<< "Enter choice: ";
+   cin>> choice;
+   switch(choice)
+   {
      case 1: add_2();
              break;
      case 2: average();
              break;
      case 3: exit(1);
-     default: cout<< "Invalid Choice";
-    }
-  }
-  return 0;
+             break;
+     default: cout<< "Invalid Choice entered.";
+   }
+ }
+ return 0;
 }
