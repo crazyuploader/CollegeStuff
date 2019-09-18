@@ -16,5 +16,6 @@ int main()
         --exponent;
     }
     cout<< "Result is: "<< c;
+    cout<< "\n\n\nCreated by Jugal Kishore -- 2019\n\n";
     return 0;
 }
