@@ -24,7 +24,7 @@ void insertNode()
   if(START==NULL)
   {
     START=temp;
-    printf("Node is created at Address: %d and its value is: %d",temp,temp->data);
+    printf("Node is created at Address = %d and its value is = %d",temp,temp->data);
   }
   else
   {
@@ -34,7 +34,7 @@ void insertNode()
       t=t->link;
     }
     t->link=temp;
-    printf("Node is created at Address: %d and its value is: %d",temp,temp->data);
+    printf("Node is created at Address = %d and its value is = %d",temp,temp->data);
   }
 }
 
@@ -50,7 +50,7 @@ void deleteNode()
     r=START;
     while(r!=NULL)
     {
-      printf("Node Address is: %d and its value is",r,*r);
+      printf("Node Address is = %d and its value is =",r,*r);
       free(r);
     }
   }
@@ -68,7 +68,7 @@ void viewNode()
     t=START;
     while(t!=NULL)
     {
-      printf("Node Address is: %d and its value is: ",t,t->data);
+      printf("Node Address is = %d and its value is = ",t,t->data);
       t=t->link;
     }
   }
