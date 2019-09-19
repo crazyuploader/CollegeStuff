@@ -220,7 +220,7 @@ multiplication()
   cin>> a;
   cout<< "Enter 2nd number: ";
   cin>> b;
-  cout<< a << "multiplied by "<< b<< " is "<< a*b;
+  cout<< "Answer is "<< a*b;
   return 0;
 }
 
