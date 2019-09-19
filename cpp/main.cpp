@@ -62,6 +62,20 @@ int division()
   return 0;
 }
 
+int factorial()
+{
+    int n,i,fac=1;
+    cout<< NEWLINE<< "///Program to display factorial of an entered number///"<< endl<< endl<< endl;
+    cout<< "Enter number: ";
+    cin>> n;
+    for(i=1;i<=n;i++)
+    {
+        fac=fac*i;
+    }
+    cout<< NEWLINE<< "Factorial of "<< n<< " is "<< fac;
+    return 0;
+}
+
 int main()
 {
  int choice;
@@ -85,6 +99,8 @@ int main()
      case 3: base_pow();
              break;
      case 4: division();
+             break;
+     case 5: factorial();
              break;
      default: cout<< "Exiting...\n";
              exit(0);
