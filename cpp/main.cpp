@@ -50,6 +50,18 @@ int base_pow()
     return 0;
 }
 
+int division()
+{
+  float a, b;
+  cout << "///Program to divide two numbers///" << endl << endl << endl;
+  cout << "Enter dividend: ";
+  cin >> a;
+  cout << "Enter divisor: ";
+  cin >> b;
+  cout << "Final answer is: " << a / b;
+  return 0;
+}
+
 int main()
 {
  int choice;
@@ -59,6 +71,8 @@ int main()
    cout<< "Programs:\n";
    cout<< "1 for Program to add two numbers\n";
    cout<< "2 for Program to get average\n";
+   cout<< "3 for Program to calculate power of a number\n";
+   cout<< "4 for Program to perform division\n";
    cout<< "Anything else to exit!\n";
    cout<< "choice: ";
    cin>> choice;
@@ -70,7 +84,9 @@ int main()
              break;
      case 3: base_pow();
              break;
-     default: cout<< "Exiting...";
+     case 4: division();
+             break;
+     default: cout<< "Exiting...\n";
              exit(0);
    }
    cout<<"\n";
