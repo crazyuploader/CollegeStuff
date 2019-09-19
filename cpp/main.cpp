@@ -1,6 +1,8 @@
 #include<iostream>
 #include<cstdlib>
 using namespace std;
+#define NEWLINE '\n'
+#define TAB '\t'
 
 int add_2()
 {
@@ -30,6 +32,23 @@ int average()
   return 0;
 }
 
+int base_pow()
+{
+    int base,exponent;
+    long long result=1;
+    cout<< "///Program to Calculate Power of a Number///"<<endl<<endl<<endl;
+    cout<< "Enter base: ";
+    cin>> base;
+    cout<< "Enter exponent: ";
+    cin>> exponent;
+    while(exponent!=0)
+    {
+        result*=base;
+        --exponent;
+    }
+    cout<< "Answer = "<< result;
+    return 0;
+}
 
 int main()
 {
@@ -40,6 +59,7 @@ int main()
    cout<< "Programs:\n";
    cout<< "1 for Program to add two numbers\n";
    cout<< "2 for Program to get average\n";
+   cout<< "Anything else to exit!\n";
    cout<< "choice: ";
    cin>> choice;
    switch(choice)
@@ -48,11 +68,11 @@ int main()
              break;
      case 2: average();
              break;
-     case 3: exit(1);
+     case 3: base_pow();
              break;
-     default: cout<< "Invalid Choice entered.";
+     default: cout<< "Exiting...";
+             exit(0);
    }
    cout<<"\n";
  }
- return 0;
 }
