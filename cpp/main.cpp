@@ -4,7 +4,7 @@ using namespace std;
 #define NEWLINE '\n'
 #define TAB '\t'
 
-int add_2()
+add_2()
 {
     int a,b;
     cout<< "///Program to add two number///"<<endl<<endl<<endl;
@@ -16,7 +16,7 @@ int add_2()
     return 0;
 }
 
-int average()
+average()
 {
   int a[20], i, n;
   float avg = 0;
@@ -32,7 +32,7 @@ int average()
   return 0;
 }
 
-int base_pow()
+base_pow()
 {
     int base,exponent;
     long long result=1;
@@ -50,7 +50,7 @@ int base_pow()
     return 0;
 }
 
-int division()
+division()
 {
   float a, b;
   cout << "///Program to divide two numbers///" << endl << endl << endl;
@@ -62,7 +62,7 @@ int division()
   return 0;
 }
 
-int factorial()
+factorial()
 {
     int n,i,fac=1;
     cout<< "///Program to display factorial of an entered number///"<< endl<< endl<< endl;
@@ -76,7 +76,7 @@ int factorial()
     return 0;
 }
 
-int greater_2()
+greater_2()
 {
   int a, b;
   cout << "///Program to display greater number///" << endl << endl << endl;
@@ -88,7 +88,7 @@ int greater_2()
   return 0;
 }
 
-int greater_3()
+greater_3()
 {
   int a, b, c;
   cout << "///Program to display greatest number///" << endl << endl << endl;
@@ -124,7 +124,7 @@ int greater_3()
   return 0;
 }
 
-int reverse()
+reverse()
 {
     int a,b=0,c;
     cout<< "///Program to reverse number///"<< endl<< endl<< endl;
@@ -140,7 +140,7 @@ int reverse()
     return 0;
 }
 
-int palindrome()
+palindrome()
 {
     int a,b=0,c,pal;
     cout<< "///Program to check for Palindrome///"<< endl<< endl<< endl;
@@ -164,7 +164,7 @@ int palindrome()
     return 0;
 }
 
-int prime()
+prime()
 {
     int n,i,m=0;
     cout<< "///Program to check Prime Number///" << endl<< endl<< endl;
@@ -186,7 +186,7 @@ int prime()
     return 0;
 }
 
-int subtract_2()
+subtract_2()
 {
     int a,b;
     cout<< "///Program to subtract two numbers///"<<endl<<endl<<endl;
@@ -199,10 +199,10 @@ int subtract_2()
 
 }
 
-int table()
+table()
 {
     int a,i;
-    cout<< "///Program to display multiplication table of entered number///"<<endl<<endl<<endl;
+    cout<< "///Program to display table of entered number///"<<endl<<endl<<endl;
     cout<< "Enter number: ";
     cin>> a;
     for(i=1;i<=10;++i)
@@ -212,7 +212,7 @@ int table()
     return 0;
 }
 
-int multiplication()
+multiplication()
 {
   int a,b;
   cout<< "///Program to display multiplication table of entered number///"<<endl<<endl<<endl;
