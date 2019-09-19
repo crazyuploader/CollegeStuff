@@ -199,6 +199,19 @@ int subtract_2()
 
 }
 
+int table()
+{
+    int a,i;
+    cout<< "///Program to display multiplication table of entered number///"<<endl<<endl<<endl;
+    cout<< "Enter number: ";
+    cin>> a;
+    for(i=1;i<=10;++i)
+        {
+          cout<< "\n" << a << " * " << i << " = " << a*i ;
+        }
+    return 0;
+}
+
 int main()
 {
  int choice;
@@ -207,7 +220,7 @@ int main()
  {
    cout<< "\nPrograms:\n";
    cout<< "1 for Program to add two numbers\n";
-   cout<< "2 for Program to get average\n";
+   cout<< "2 for Program to get average of entered number(s)\n";
    cout<< "3 for Program to calculate power of a number\n";
    cout<< "4 for Program to perform division\n";
    cout<< "5 for Program to calculate factorial\n";
@@ -217,6 +230,7 @@ int main()
    cout<< "9 for Program to check if entered number is Palindrome or not\n";
    cout<< "10 for Program to check if entered number is Prime or not\n";
    cout<< "11 for Program to subtract two numbers\n";
+   cout<< "12 for Program to show table of entered number\n";
    cout<< "Anything else to exit!\n";
    cout<< "choice: ";
    cin>> choice;
@@ -243,6 +257,8 @@ int main()
      case 10: prime();
              break;
      case 11: subtract_2();
+             break;
+     case 12: table();
              break;
      default: cout<< "Exiting...\n";
              exit(0);
