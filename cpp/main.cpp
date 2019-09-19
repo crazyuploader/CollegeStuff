@@ -10,7 +10,7 @@ int add_2()
     cin>> a;
     cout<< "Enter second number: ";
     cin>> b;
-    cout<< "Addition of entered number is: "<< a+b;
+    cout<< "Addition of entered number is: "<< a+b<<endl;
     return 0;
 }
 
@@ -26,7 +26,7 @@ int average()
     cin >> a[i];
     avg = avg + a[i];
   }
-  cout << "Average of " << n << " number(s) is: " << avg / n;
+  cout << "Average of " << n << " number(s) is: " << avg / n<<endl;
   return 0;
 }
 
@@ -34,10 +34,9 @@ int average()
 int main()
 {
  int choice;
+ cout<< "///Main Program///"<<endl<<endl;
  while(1)
  {
-   system ("CLS");
-   cout<< "///Main Program///"<<endl<<endl<<endl;
    cout<< "Enter choice: ";
    cin>> choice;
    switch(choice)
