@@ -155,22 +155,57 @@ int palindrome()
     }
     if(pal==b)
     {
-        cout<< "\nNumber is Palindrome";
+        cout<< "Number is Palindrome";
     }
     else
     {
-        cout<< "\nNumber is not Palindrome";
+        cout<< "Number is not Palindrome";
     }
     return 0;
+}
+
+int prime()
+{
+    int n,i,m=0;
+    cout<< "///Program to check Prime Number///" << endl<< endl<< endl;
+    cout<< "Enter the number to check for Prime: ";
+    cin>> n;
+    for(i=1;i<=n;i++)
+    {
+        if(n%i==0)
+        m++;
+    }
+    if(m==2)
+    {
+        cout<< "Number is Prime";
+    }
+    else
+    {
+        cout<< "Number is not Prime";
+    }
+    return 0;
+}
+
+int subtract_2()
+{
+    int a,b;
+    cout<< "///Program to subtract two numbers///"<<endl<<endl<<endl;
+    cout<< "Enter first number: ";
+    cin>> a;
+    cout<< "Enter second number: ";
+    cin>> b;
+    cout<< "The difference of these two numbers is: "<< a-b;
+    return 0;
+
 }
 
 int main()
 {
  int choice;
- cout<< "///Main Program///"<<endl<<endl;
+ cout<< "///Main Program///";
  while(1)
  {
-   cout<< "Programs:\n";
+   cout<< "\nPrograms:\n";
    cout<< "1 for Program to add two numbers\n";
    cout<< "2 for Program to get average\n";
    cout<< "3 for Program to calculate power of a number\n";
@@ -180,6 +215,8 @@ int main()
    cout<< "7 for Program to show greatest number from 3 numbers\n";
    cout<< "8 for Program to reverse entered number\n";
    cout<< "9 for Program to check if entered number is Palindrome or not\n";
+   cout<< "10 for Program to check if entered number is Prime or not\n";
+   cout<< "11 for Program to subtract two numbers\n";
    cout<< "Anything else to exit!\n";
    cout<< "choice: ";
    cin>> choice;
@@ -202,6 +239,10 @@ int main()
      case 8: reverse();
              break;
      case 9: palindrome();
+             break;
+     case 10: prime();
+             break;
+     case 11: subtract_2();
              break;
      default: cout<< "Exiting...\n";
              exit(0);
