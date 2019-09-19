@@ -37,7 +37,10 @@ int main()
  cout<< "///Main Program///"<<endl<<endl;
  while(1)
  {
-   cout<< "Enter choice: ";
+   cout<< "Programs:\n";
+   cout<< "1 for Program to add two numbers\n";
+   cout<< "2 for Program to get average\n";
+   cout<< "choice: ";
    cin>> choice;
    switch(choice)
    {
@@ -49,6 +52,7 @@ int main()
              break;
      default: cout<< "Invalid Choice entered.";
    }
+   cout<<"\n";
  }
  return 0;
 }
