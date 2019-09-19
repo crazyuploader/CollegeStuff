@@ -212,7 +212,7 @@ int table()
     return 0;
 }
 
-multiplication()
+int multiplication()
 {
   int a,b;
   cout<< "///Program to display multiplication table of entered number///"<<endl<<endl<<endl;
@@ -227,7 +227,7 @@ multiplication()
 int main()
 {
  int choice;
- cout<< "///Main Program///";
+ cout<< "///Main Program///\n";
  while(1)
  {
    cout<< "\nPrograms:\n";
@@ -275,7 +275,10 @@ int main()
              break;
      case 13: multiplication();
              break;
-     default: cout<< "Exiting...\n";
+     default: cout<< "Exiting...\n\n";
+              cout<< TAB<< " =================================\n";
+              cout<< TAB<< "||Created by Jugal Kishore -- 2019||"<< NEWLINE;
+              cout<< TAB<< " =================================\n";
              exit(0);
    }
    cout<<"\n";
