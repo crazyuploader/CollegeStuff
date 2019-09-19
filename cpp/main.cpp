@@ -233,7 +233,7 @@ int main()
    cout<< "\nPrograms:\n";
    cout<< "1 for Program to add two numbers\n";
    cout<< "2 for Program to subtract two numbers\n";
-   cout<< "3 for Program to mutliply two numbers\n";
+   cout<< "3 for Program to multiply two numbers\n";
    cout<< "4 for Program to perform division\n";
    cout<< "5 for Program to calculate factorial\n";
    cout<< "6 for Program to show greatest number from 2 numbers\n";
