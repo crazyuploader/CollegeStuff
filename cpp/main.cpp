@@ -212,6 +212,18 @@ int table()
     return 0;
 }
 
+multiplication()
+{
+  int a,b;
+  cout<< "///Program to display multiplication table of entered number///"<<endl<<endl<<endl;
+  cout<< "Enter 1st number: ";
+  cin>> a;
+  cout<< "Enter 2nd number: ";
+  cin>> b;
+  cout<< a << "multiplied by "<< b<< " is "<< a*b;
+  return 0;
+}
+
 int main()
 {
  int choice;
@@ -231,6 +243,7 @@ int main()
    cout<< "10 for Program to check if entered number is Prime or not\n";
    cout<< "11 for Program to subtract two numbers\n";
    cout<< "12 for Program to show table of entered number\n";
+   cout<< "13 for Program to mutliply two numbers\n";
    cout<< "Anything else to exit!\n";
    cout<< "choice: ";
    cin>> choice;
@@ -259,6 +272,8 @@ int main()
      case 11: subtract_2();
              break;
      case 12: table();
+             break;
+     case 13: multiplication();
              break;
      default: cout<< "Exiting...\n";
              exit(0);
