@@ -65,14 +65,102 @@ int division()
 int factorial()
 {
     int n,i,fac=1;
-    cout<< NEWLINE<< "///Program to display factorial of an entered number///"<< endl<< endl<< endl;
+    cout<< "///Program to display factorial of an entered number///"<< endl<< endl<< endl;
     cout<< "Enter number: ";
     cin>> n;
     for(i=1;i<=n;i++)
     {
         fac=fac*i;
     }
-    cout<< NEWLINE<< "Factorial of "<< n<< " is "<< fac;
+    cout<< "Factorial of "<< n<< " is "<< fac;
+    return 0;
+}
+
+int greater_2()
+{
+  int a, b;
+  cout << "///Program to display greater number///" << endl << endl << endl;
+  cout << "Enter first number: ";
+  cin >> a;
+  cout << "Enter second number: ";
+  cin >> b;
+  (a == b) ? cout << "Entered number are equal":(a>b)?cout<<"Greater number is: "<<a: cout << "Greater number is: " << b;
+  return 0;
+}
+
+int greater_3()
+{
+  int a, b, c;
+  cout << "///Program to display greatest number///" << endl << endl << endl;
+  cout << "Enter first number: ";
+  cin >> a;
+  cout << "Enter second number: ";
+  cin >> b;
+  cout << "Enter third number: ";
+  cin >> c;
+    if (a > b)
+    {
+      if (a > c)
+	     {
+         cout << "Greatest number is: " << a;
+       }
+      else
+	     {
+        cout << "Greatest number is: " << c;
+       }
+     }
+
+    else
+    {
+      if (b > c)
+	     {
+         cout << "Greatest number is: " << b;
+       }
+      else
+	     {
+         cout << "Greatest number is: " << c;
+       }
+    }
+  return 0;
+}
+
+int reverse()
+{
+    int a,b=0,c;
+    cout<< "///Program to reverse number///"<< endl<< endl<< endl;
+    cout<< "Enter the Number to reverse: ";
+    cin>> a;
+    while(a>0)
+    {
+        c=a%10;
+        b=b*10+c;
+        a=a/10;
+    }
+    cout<< "Revered Number is: "<< b;
+    return 0;
+}
+
+int palindrome()
+{
+    int a,b=0,c,pal;
+    cout<< "///Program to check for Palindrome///"<< endl<< endl<< endl;
+    cout<< "Enter the Number to reverse: ";
+    cin>> a;
+    pal=a;
+    while(a>0)
+    {
+        c=a%10;
+        b=b*10+c;
+        a=a/10;
+    }
+    if(pal==b)
+    {
+        cout<< "\nNumber is Palindrome";
+    }
+    else
+    {
+        cout<< "\nNumber is not Palindrome";
+    }
     return 0;
 }
 
@@ -87,6 +175,11 @@ int main()
    cout<< "2 for Program to get average\n";
    cout<< "3 for Program to calculate power of a number\n";
    cout<< "4 for Program to perform division\n";
+   cout<< "5 for Program to calculate factorial\n";
+   cout<< "6 for Program to show greatest number from 2 numbers\n";
+   cout<< "7 for Program to show greatest number from 3 numbers\n";
+   cout<< "8 for Program to reverse entered number\n";
+   cout<< "9 for Program to check if entered number is Palindrome or not\n";
    cout<< "Anything else to exit!\n";
    cout<< "choice: ";
    cin>> choice;
@@ -101,6 +194,14 @@ int main()
      case 4: division();
              break;
      case 5: factorial();
+             break;
+     case 6: greater_2();
+             break;
+     case 7: greater_3();
+             break;
+     case 8: reverse();
+             break;
+     case 9: palindrome();
              break;
      default: cout<< "Exiting...\n";
              exit(0);
