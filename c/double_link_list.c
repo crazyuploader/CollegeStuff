@@ -4,13 +4,13 @@
 struct node
 {
   int data;
-  struct node* left; //Pointer to left node
-  struct node* right; //Pointer to Right node
+  struct node *left; //Pointer to left node
+  struct node *right; //Pointer to Right node
 };
 
 struct node *START;
 
-void insert_begin()
+void insert_last()
 {
     struct node *temp,*t;
     int item;
@@ -22,7 +22,7 @@ void insert_begin()
     {
         temp->right=NULL;
         temp->left=NULL;
-        START=temp->data;
+        START=temp;
         printf("Node inserted at Address = %d and its value = %d",temp,item);
     }
     else
@@ -35,13 +35,14 @@ void insert_begin()
         t->right=temp;
         temp->left=t;
         temp->right=NULL;
+        printf("Node inserted at Address = %d and its value = %d",temp,item);
     }
 }
 
 void main()
 {
     int choice;
-    printf("** Menu Driven Program for Double Linked-List **\n");
+    printf("///Program for Double Linked-List///\n");
     printf("\nChoose an option from the following list\n");
     printf("\n========================================\n");
     printf("\n1. Insert a Node\n");
@@ -52,7 +53,7 @@ void main()
     {
         switch(choice)
         {
-            case 1:  insert_begin();
+            case 1:  insert_last();
                      break;
             default: printf("Exiting...\n\n");
                      printf("\t =================================\n");
@@ -62,5 +63,4 @@ void main()
                      break;
         }
     }
-
 }
