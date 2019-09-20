@@ -402,6 +402,23 @@ int ascii()
     return 0;
 }
 
+int factors_of_numbers()
+{
+    int a,i;
+    cout<< "///Program to display all the factors an entered numbers///"<< endl<< endl<< endl;
+    cout<< "Enter number: ";
+    cin>> a;
+    cout<< "\nFactors of entered number "<< a<< " is:\n\n";
+    for(i=1;i<=a;i++)
+    {
+        if(a%i==0)
+        {
+            cout<< " "<< i<< " ";
+        }
+    }
+    return 0;
+}
+
 int main()
 {
  int choice;
@@ -429,6 +446,7 @@ int main()
    cout<< "18. for Program to convert Decimal number to Binary number\n";
    cout<< "19. for Program to display sizes of various data types in your system\n";
    cout<< "20. for Program to show all the ASCII Codes\n";
+   cout<< "21. for Program to show all the factors of an entered number\n";
    cout<< "Anything else to exit!\n";
    cout<< "\nchoice: ";
    cin>> choice;
@@ -473,6 +491,8 @@ int main()
      case 19: sizeof_data_types();
               break;
      case 20: ascii();
+              break;
+     case 21: factors_of_numbers();
               break;
      default: cout<< "Exiting...\n\n";
               cout<< TAB<< " =================================\n";
