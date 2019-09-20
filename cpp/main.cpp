@@ -231,19 +231,19 @@ int main()
  while(1)
  {
    cout<< "\nPrograms:\n";
-   cout<< "1 for Program to add two numbers\n";
-   cout<< "2 for Program to subtract two numbers\n";
-   cout<< "3 for Program to multiply two numbers\n";
-   cout<< "4 for Program to perform division\n";
-   cout<< "5 for Program to calculate factorial\n";
-   cout<< "6 for Program to show greatest number from 2 numbers\n";
-   cout<< "7 for Program to show greatest number from 3 numbers\n";
-   cout<< "8 for Program to calculate power of a number\n";
-   cout<< "9 for for Program to reverse entered number\n";
-   cout<< "10 Program to check if entered number is Palindrome or not\n";
-   cout<< "11 for Program to get average of entered number(s)\n";
-   cout<< "12 for Program to show table of entered number\n";
-   cout<< "13 for Program to check if entered number is Prime or not\n";
+   cout<< "1. for Program to add two numbers\n";
+   cout<< "2. for Program to subtract two numbers\n";
+   cout<< "3. for Program to multiply two numbers\n";
+   cout<< "4. for Program to perform division\n";
+   cout<< "5. for Program to calculate factorial\n";
+   cout<< "6. for Program to show greatest number from 2 numbers\n";
+   cout<< "7. for Program to show greatest number from 3 numbers\n";
+   cout<< "8. for Program to calculate power of a number\n";
+   cout<< "9. for for Program to reverse entered number\n";
+   cout<< "10. Program to check if entered number is Palindrome or not\n";
+   cout<< "11. for Program to get average of entered number(s)\n";
+   cout<< "12. for Program to show table of entered number\n";
+   cout<< "13. for Program to check if entered number is Prime or not\n";
    cout<< "Anything else to exit!\n";
    cout<< "choice: ";
    cin>> choice;
