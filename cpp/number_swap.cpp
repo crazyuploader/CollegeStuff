@@ -46,15 +46,12 @@ int main()
         cin>> choice;
         switch(choice)
         {
-            case 1: first_way();
-                    break;
-            case 2: second_way();
-                    break;
+            case 1:  first_way();
+                     break;
+            case 2:  second_way();
+                     break;
             default: cout<< "Exiting...\n\n";
-                     cout<< TAB<< " =================================\n";
-              cout<< TAB<< "||Created by Jugal Kishore -- 2019||"<< NEWLINE;
-              cout<< TAB<< " =================================\n";
-             exit(0);
+                     exit(0);
         }
     }
     return 0;
