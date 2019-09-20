@@ -224,6 +224,33 @@ int multiplication()
   return 0;
 }
 
+int armstrong()
+{
+    int num,i,r,temp,sum=0;
+    cout<< "///Program to check whether or not entered number is Armstrong///"<< endl<< endl<< endl;
+    cout<< "Enter number: ";
+    cin>> num;
+    temp=num;
+    while(num>0)
+    {
+        r=num%10;
+        sum=sum+(r*r*r);
+        num=num/10;
+    }
+    if(temp==sum) //If-else condition to whether or not the number is equal to the sum of cubes of its digits
+    {
+        cout<< "\nEntered number "<< temp<< " is Armstrong.\n";
+    }
+    else
+    {
+        cout<< "\nEntered number "<< temp<< " is not Armstrong.\n";
+    }
+    /* Alternative way to do the same work without if-else condition
+    (temp==sum)?cout<< "\nEntered number "<< temp<< " is Armstrong.\n":cout<< "\nEntered number "<< temp<< " is not Armstrong.\n";
+    */
+    return 0;
+}
+
 int main()
 {
  int choice;
@@ -244,37 +271,40 @@ int main()
    cout<< "11. for Program to get average of entered number(s)\n";
    cout<< "12. for Program to show table of entered number\n";
    cout<< "13. for Program to check if entered number is Prime or not\n";
+   cout<< "14. for Program to check whether or not entered number is Armstrong\n"
    cout<< "Anything else to exit!\n";
    cout<< "choice: ";
    cin>> choice;
    switch(choice)
    {
-     case 1: add_2();
-             break;
-     case 2: subtract_2();
-             break;
-     case 3: multiplication();
-             break;
-     case 4: division();
-             break;
-     case 5: factorial();
-             break;
-     case 6: greater_2();
-             break;
-     case 7: greater_3();
-             break;
-     case 8: base_pow();
-             break;
-     case 9: reverse();
-             break;
+     case 1:  add_2();
+              break;
+     case 2:  subtract_2();
+              break;
+     case 3:  multiplication();
+              break;
+     case 4:  division();
+              break;
+     case 5:  factorial();
+              break;
+     case 6:  greater_2();
+              break;
+     case 7:  greater_3();
+              break;
+     case 8:  base_pow();
+              break;
+     case 9:  reverse();
+              break;
      case 10: palindrome();
-             break;
+              break;
      case 11: average();
-             break;
+              break;
      case 12: table();
-             break;
+              break;
      case 13: prime();
-             break;
+              break;
+     case 14: armstrong();
+              break;
      default: cout<< "Exiting...\n\n";
               cout<< TAB<< " =================================\n";
               cout<< TAB<< "||Created by Jugal Kishore -- 2019||"<< NEWLINE;

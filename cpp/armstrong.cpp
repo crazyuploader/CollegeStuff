@@ -24,7 +24,9 @@ int main()
     {
         cout<< "\nEntered number "<< temp<< " is not Armstrong.\n";
     }
-    //(temp==sum)?cout<< "\nEntered number "<< temp<< " is Armstrong.\n":cout<< "\nEntered number "<< temp<< " is not Armstrong.\n";
+    /* Alternative way to do the same work without if-else condition
+    (temp==sum)?cout<< "\nEntered number "<< temp<< " is Armstrong.\n":cout<< "\nEntered number "<< temp<< " is not Armstrong.\n";
+    */
     cout<< NEWLINE<< NEWLINE<< "Created by Jugal Kishore -- 2019"<< NEWLINE;
     return 0;
 }

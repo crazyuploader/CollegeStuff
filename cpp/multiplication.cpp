@@ -13,5 +13,6 @@ int main()
   cout<< "Enter 2nd number: ";
   cin>> b;
   cout<< "Answer is "<< a*b;
+  cout<< NEWLINE<< NEWLINE<< "Created by Jugal Kishore -- 2019"<< NEWLINE;
   return 0;
 }
