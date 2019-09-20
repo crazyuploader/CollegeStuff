@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 struct node
 {
@@ -7,34 +8,32 @@ struct node
   struct node* right; //Pointer to Right node
 };
 
-struct node *START=NULL;
-
-void append()
+struct node *START;
+void insert_begin()
 {
     struct node *temp;
+    int item;
     temp=(struct node*)malloc(sizeof(struct node));
-    printf("Please enter a value for a node: ");
-    scanf("%d",&temp->data);
-    temp->left=NULL;
-    temp->right=NULL;
+    printf("Enter value for node: ");
+    scanf("%d",&item);
     if(START==NULL)
     {
+        temp->right=NULL;
+        temp->left=NULL;
+        temp->data=item;
         START=temp;
     }
     else
     {
-        struct node *p;
-        p=START;
-        while(p->right!=NULL)
-        {
-            p=p->right;
-        }
-        p->right=temp;
-        temp->left=p;
+        temp->data=item;
+        START->right=temp->left;
+        temp->right=NULL;
+        START=temp;
     }
+    printf("Node inserted at Address = %d",temp);
 }
 
 int main()
 {
-    append();
+    insert_begin();
 }
