@@ -74,10 +74,10 @@ void insert_specified()
     struct node *temp,*t;
     int loc,i,item;
     temp=createnode();
+    t=START;
     printf("\nEnter location after which you want to add a Node: ");
     scanf("%d",&loc);
-    t=START;
-    for(i=1;i<loc;i++)
+    for(i=0;i<loc;i++)
     {
         t=t->right;
         if(t=NULL)
