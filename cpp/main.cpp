@@ -324,6 +324,9 @@ int number_swap()
                      cout<< "After swapping a is "<< a<< " and b is "<< b;
                      break;
             default: cout<< "Exiting...\n\n";
+                     cout<< TAB<< " =================================\n";
+                     cout<< TAB<< "||Created by Jugal Kishore -- 2019||"<< NEWLINE;
+                     cout<< TAB<< " =================================\n";
                      exit(0);
         }
     }
@@ -390,7 +393,9 @@ int ascii()
                      cout<< endl;
                      break;
             default: cout<< "Exiting...\n\n";
-                     cout<< NEWLINE<< NEWLINE<< "Created by Jugal Kishore -- 2019"<< NEWLINE;
+                     cout<< TAB<< " =================================\n";
+                     cout<< TAB<< "||Created by Jugal Kishore -- 2019||"<< NEWLINE;
+                     cout<< TAB<< " =================================\n";
                      exit(0);
         }
     }
