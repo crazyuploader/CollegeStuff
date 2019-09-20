@@ -124,7 +124,7 @@ int greater_3()
   return 0;
 }
 
-int reverse()
+int reverse_2()
 {
     int a,b=0,c;
     cout<< "///Program to reverse number///"<< endl<< endl<< endl;
@@ -268,6 +268,47 @@ int sum_digits()
     return 0;
 }
 
+int number_swap()
+{
+    int choice,a,b;
+    cout<< "///Program to Swapping two entered numbers///"<< endl<< endl<< endl;
+    while(1)
+    {
+        cout<< "\nchoices\n";
+        cout<< "\n1. for Swapping using + and -";
+        cout<< "\n2. for Swapping using * and /";
+        cout<< "\nAnything else and off you go!\n";
+        cout<< "\nchoice: ";
+        cin>> choice;
+        switch(choice)
+        {
+            case 1:  cout<< "\nUsing + and -"<< endl;
+                     cout<< "\nEnter number a: ";
+                     cin>> a;
+                     cout<< "\nEnter number b: ";
+                     cin>> b;
+                     a=a+b;
+                     b=a-b;
+                     a=a-b;
+                     cout<< "After swapping a is "<< a<< " and b is "<< b;
+                     break;
+            case 2:  cout<< "\nUsing * and /"<< endl;
+                     cout<< "\nEnter number a: ";
+                     cin>> a;
+                     cout<< "\nEnter number b: ";
+                     cin>> b;
+                     a=a*b;
+                     b=a/b;
+                     a=a/b;
+                     cout<< "After swapping a is "<< a<< " and b is "<< b;
+                     break;
+            default: cout<< "Exiting...\n\n";
+                     exit(0);
+        }
+    }
+    return 0;
+}
+
 int main()
 {
  int choice;
@@ -290,6 +331,7 @@ int main()
    cout<< "13. for Program to check if entered number is Prime or not\n";
    cout<< "14. for Program to check whether or not entered number is Armstrong\n";
    cout<< "15. for Program to display sum of its digits\n";
+   cout<< "16. for Program to swap two entered numbers using two ways\n";
    cout<< "Anything else to exit!\n";
    cout<< "choice: ";
    cin>> choice;
@@ -311,7 +353,7 @@ int main()
               break;
      case 8:  base_pow();
               break;
-     case 9:  reverse();
+     case 9:  reverse_2();
               break;
      case 10: palindrome();
               break;
@@ -325,11 +367,13 @@ int main()
               break;
      case 15: sum_digits();
               break;
+     case 16: number_swap();
+              break;
      default: cout<< "Exiting...\n\n";
               cout<< TAB<< " =================================\n";
               cout<< TAB<< "||Created by Jugal Kishore -- 2019||"<< NEWLINE;
               cout<< TAB<< " =================================\n";
-             exit(0);
+              exit(0);
    }
    cout<<"\n";
  }
