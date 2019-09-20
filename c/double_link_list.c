@@ -10,11 +10,18 @@ struct node
 
 struct node *START;
 
+struct node *createnode()
+{
+    struct node *n;
+    n=(struct node*)malloc(sizeof(struct node));
+    return n;
+};
+
 void insert_last()
 {
     struct node *temp,*t;
     int item;
-    temp=(struct node*)malloc(sizeof(struct node));
+    temp=createnode();
     printf("\nEnter value for node: ");
     scanf("%d",&item);
     temp->data=item;
