@@ -58,8 +58,8 @@ int division()
   cin>> a;
   cout<< "\nEnter divisor: ";
   cin>> b;
-  cout<< "\nQuotient  "<< a/b<< endl;
-  cout<< "\nRemainder "<< a%b<< endl;
+  cout<< "\nQuotient  = "<< a/b<< endl;
+  cout<< "\nRemainder = "<< a%b<< endl;
   return 0;
 }
 
