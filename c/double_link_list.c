@@ -69,6 +69,30 @@ void insert_last()
     printf("\nNode inserted at Address = %d and its value = %d",temp,item);
 }
 
+void insert_specified()
+{
+    struct node *temp,*t;
+    int loc,i,item;
+    temp=createnode();
+    printf("\nEnter location after which you want to add a Node: ");
+    scanf("%d",&loc);
+    t=START;
+    for(i=1;i<loc;i++)
+    {
+        t=t->right;
+        if(t=NULL)
+        {
+            printf("\nThere are less than %d element(s)",loc);
+        }
+    }
+    temp->data=item;
+    temp->right=t->right;
+    temp->left=t;
+    t->right=temp;
+    t->right->left=temp;
+    printf("\nNode inserted at Address = %d and its value = %d",temp,item);
+}
+
 void main()
 {
     int choice;
@@ -79,6 +103,7 @@ void main()
         printf("\n========================================\n");
         printf("\n1. Insert a Node at beginning\n");
         printf("\n2. Insert a Node at last\n");
+        printf("\n3. Insert a Node after specified location\n");
         printf("\nAnything else to exit!\n");
         printf("\nchoice: ");
         scanf("%d",&choice);
@@ -86,7 +111,9 @@ void main()
         {
             case 1:  insert_begin();
                      break;
-            case 2: insert_last();
+            case 2:  insert_last();
+                     break;
+            case 3:  insert_specified();
                      break;
             default: printf("Exiting...\n\n");
                      printf("\t =================================\n");
