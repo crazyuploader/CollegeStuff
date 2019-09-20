@@ -52,13 +52,14 @@ int base_pow()
 
 int division()
 {
-  float a, b;
-  cout << "///Program to divide two numbers///" << endl << endl << endl;
-  cout << "Enter dividend: ";
-  cin >> a;
-  cout << "Enter divisor: ";
-  cin >> b;
-  cout << "Final answer is: " << a / b;
+  int a, b;
+  cout<< "///Program to divide two numbers///"<< endl<< endl<< endl;
+  cout<< "\nEnter dividend: ";
+  cin>> a;
+  cout<< "\nEnter divisor: ";
+  cin>> b;
+  cout<< "\nQuotient  "<< a/b<< endl;
+  cout<< "\nRemainder "<< a%b<< endl;
   return 0;
 }
 
