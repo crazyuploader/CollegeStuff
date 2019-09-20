@@ -251,6 +251,23 @@ int armstrong()
     return 0;
 }
 
+int sum_digits()
+{
+    int num,sum=0,r,temp;
+    cout<< "///Program to display sum of its digits///"<< endl<< endl<< endl;
+    cout<< "Enter number: ";
+    cin>> num;
+    temp=num;
+    while(num!=0)
+    {
+        r=num%10;
+        sum=sum+r;
+        num=num/10;
+    }
+    cout<< "\nSum of entered number "<< temp<< " is "<< sum;
+    return 0;
+}
+
 int main()
 {
  int choice;
@@ -271,7 +288,8 @@ int main()
    cout<< "11. for Program to get average of entered number(s)\n";
    cout<< "12. for Program to show table of entered number\n";
    cout<< "13. for Program to check if entered number is Prime or not\n";
-   cout<< "14. for Program to check whether or not entered number is Armstrong\n"
+   cout<< "14. for Program to check whether or not entered number is Armstrong\n";
+   cout<< "15. for Program to display sum of its digits\n";
    cout<< "Anything else to exit!\n";
    cout<< "choice: ";
    cin>> choice;
@@ -304,6 +322,8 @@ int main()
      case 13: prime();
               break;
      case 14: armstrong();
+              break;
+     case 15: sum_digits();
               break;
      default: cout<< "Exiting...\n\n";
               cout<< TAB<< " =================================\n";
