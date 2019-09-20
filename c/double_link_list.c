@@ -52,8 +52,7 @@ int main()
                      printf("\t =================================\n");
                      printf("\t||Created by Jugal Kishore -- 2019||\n");
                      printf("\t =================================\n");
-                    exit(0);
+                     exit(0);
         }
     }
-
 }
