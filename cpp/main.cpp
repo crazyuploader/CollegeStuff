@@ -349,6 +349,16 @@ int deci_to_bin()
     return 0;
 }
 
+int sizeof_data_types()
+{
+    cout<< "///Program to display various sizes of data types in your system///"<< endl<< endl<< endl;
+    cout<< "Size of 'char' type is "<< sizeof(char)<< " bytes.\n";
+    cout<< "Size of 'int' type is "<< sizeof(int)<< " bytes.\n";
+    cout<< "Size of 'float' type is "<< sizeof(float)<< " bytes.\n";
+    cout<< "Size of 'double' type is "<< sizeof(double)<< " bytes.\n";
+    return 0;
+}
+
 int main()
 {
  int choice;
@@ -374,6 +384,7 @@ int main()
    cout<< "16. for Program to display sum of its digits\n";
    cout<< "17. for Program to swap two entered numbers using two ways\n";
    cout<< "18. for Program to convert Decimal number to Binary number\n";
+   cout<< "19. for Program to display sizes of various data types in your system\n";
    cout<< "Anything else to exit!\n";
    cout<< "choice: ";
    cin>> choice;
@@ -414,6 +425,8 @@ int main()
      case 17: number_swap();
               break;
      case 18: deci_to_bin();
+              break;
+     case 19: sizeof_data_types();
               break;
      default: cout<< "Exiting...\n\n";
               cout<< TAB<< " =================================\n";
