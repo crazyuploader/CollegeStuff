@@ -19,78 +19,78 @@ struct node *createnode()
 
 void insert_begin()
 {
-    struct node *temp;
+    struct node *pointer;
     int item;
-    temp=createnode();
+    pointer=createnode();
     printf("\nEnter a value for a node: ");
     scanf("%d",&item);
     if(START=NULL)
     {
-        temp->left=NULL;
-        temp->right=NULL;
-        temp->data=item;
-        START=temp;
+        pointer->left=NULL;
+        pointer->right=NULL;
+        pointer->data=item;
+        START=pointer;
     }
     else
     {
-        temp->data=item;
-        temp->left=NULL;
-        temp->right=START;
-        START=temp;
+        pointer->data=item;
+        pointer->left=NULL;
+        pointer->right=START;
+        START=pointer;
     }
-    printf("\nNode inserted at Address = %d and its value = %d",temp,item);
+    printf("\nNode inserted at Address = %d and its value = %d",pointer,item);
 }
 
 void insert_last()
 {
-    struct node *temp,*t;
+    struct node *pointer,*temp;
     int item;
-    temp=createnode();
+    pointer=createnode();
     printf("\nEnter value for node: ");
     scanf("%d",&item);
-    temp->data=item;
+    pointer->data=item;
     if(START==NULL)
     {
-        temp->right=NULL;
-        temp->left=NULL;
-        START=temp;
+        pointer->right=NULL;
+        pointer->left=NULL;
+        START=pointer;
     }
     else
     {
-        t=START;
-        while(t->right!=NULL)
+        temp=START;
+        while(temp->right!=NULL)
         {
-            t=t->right;
+            temp=temp->right;
         }
-        t->right=temp;
-        temp->left=t;
-        temp->right=NULL;
+        temp->right=pointer;
+        pointer->left=temp;
+        pointer->right=NULL;
     }
-    printf("\nNode inserted at Address = %d and its value = %d",temp,item);
+    printf("\nNode inserted at Address = %d and its value = %d",pointer,item);
 }
 
 void insert_specified()
 {
-    struct node *temp,*t;
+    struct node *pointer,*temp;
     int loc,i,item;
-    temp=createnode();
-    t=START;
+    pointer=createnode();
+    temp=START;
     printf("\nEnter location after which you want to add a Node: ");
     scanf("%d",&loc);
     for(i=0;i<loc;i++)
     {
-        t=t->right;
-        if(t=NULL)
+        temp=temp->right;
+        if(temp=NULL)
         {
             printf("\nThere are less than %d element(s)",loc);
         }
     }
-    temp->data=item;
-    temp->right=t->right;
-    temp->left=t;
-    t->right=temp;
-    t->right->left=temp;
-    printf("\nNode inserted at Address = %d and its value = %d",temp,item);
+    pointer->data=item;
+    pointer->right=temp->right;
+    pointer->left=temp;
+    temp->right=pointer;
+    temp->right->left=pointer;
+    printf("\nNode inserted at Address = %d and its value = %d",pointer,item);
 }
 
 void main()
