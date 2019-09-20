@@ -31,6 +31,14 @@ void insert_begin()
         temp->data=item;
         START=temp;
     }
+    else
+    {
+        temp->data=item;
+        temp->left=NULL;
+        temp->right=START;
+        START=temp;
+    }
+    printf("\nNode inserted at Address = %d and its value = %d",temp,item);
 }
 
 void insert_last()
@@ -69,13 +77,16 @@ void main()
     {
         printf("\n\nChoose an option from the following list\n");
         printf("\n========================================\n");
-        printf("\n1. Insert a Node\n");
+        printf("\n1. Insert a Node at beginning\n");
+        printf("\n2. Insert a Node at last\n");
         printf("\nAnything else to exit!\n");
         printf("\nchoice: ");
         scanf("%d",&choice);
         switch(choice)
         {
-            case 1:  insert_last();
+            case 1:  insert_begin();
+                     break;
+            case 2: insert_last();
                      break;
             default: printf("Exiting...\n\n");
                      printf("\t =================================\n");
