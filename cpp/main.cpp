@@ -309,6 +309,25 @@ int number_swap()
     return 0;
 }
 
+int deci_to_bin()
+{
+    int i,num,r[10],j;
+    cout<< "///Program to convert entered Decimal number to Binary number///"<< endl<< endl<< endl;
+    cout<< "Enter number: ";
+    cin>> num;
+    for(i=0;num>0;i++)
+    {
+        r[i]=num%2;
+        num=num/2;
+    }
+    cout<< "\nBinary number of entered number is: ";
+    for(j=i-1;j>=0;j--)
+        {
+            cout<< r[j];
+        }
+    return 0;
+}
+
 int main()
 {
  int choice;
@@ -332,6 +351,7 @@ int main()
    cout<< "14. for Program to check whether or not entered number is Armstrong\n";
    cout<< "15. for Program to display sum of its digits\n";
    cout<< "16. for Program to swap two entered numbers using two ways\n";
+   cout<< "17. for Program to convert Decimal number to Binary number\n";
    cout<< "Anything else to exit!\n";
    cout<< "choice: ";
    cin>> choice;
@@ -368,6 +388,8 @@ int main()
      case 15: sum_digits();
               break;
      case 16: number_swap();
+              break;
+     case 17: deci_to_bin();
               break;
      default: cout<< "Exiting...\n\n";
               cout<< TAB<< " =================================\n";
