@@ -9,11 +9,17 @@ struct node
 };
 
 struct node *START;
+struct node *createnode()
+{
+    struct node *n;
+    n=(struct node*)malloc(sizeof(struct node));
+    return n;
+};
 void insert_begin()
 {
     struct node *temp;
     int item;
-    temp=(struct node*)malloc(sizeof(struct node));
+    temp=createnode();
     printf("Enter value for node: ");
     scanf("%d",&item);
     if(START==NULL)
