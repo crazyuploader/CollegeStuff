@@ -359,13 +359,51 @@ int sizeof_data_types()
     return 0;
 }
 
+int ascii()
+{
+    int choice,a;
+    cout<< "///Program to display all the ASCII codes///"<< endl<< endl<< endl;
+    while(1)
+    {
+        cout<< "\nchoices\n";
+        cout<< "\n1. for all the ASCII Codes\n";
+        cout<< "\n2. for the ASCII Codes you can see and make sense of\n";
+        cout<< "\nAnything else and off you go!\n";
+        cout<< "\nchoice: ";
+        cin>> choice;
+        switch(choice)
+        {
+            case 1:  a=0;
+                     while(a!=127)
+                         {
+                             cout<< "\nASCII Code for "<< a<< " is "<< char(a);
+                             a++;
+                         }
+                     cout<< endl;
+                     break;
+            case 2:  a=32;
+                     while(a!=127)
+                         {
+                             cout<< "\nASCII Code for "<< a<< " is "<< char(a);
+                             a++;
+                         }
+                     cout<< endl;
+                     break;
+            default: cout<< "Exiting...\n\n";
+                     cout<< NEWLINE<< NEWLINE<< "Created by Jugal Kishore -- 2019"<< NEWLINE;
+                     exit(0);
+        }
+    }
+    return 0;
+}
+
 int main()
 {
  int choice;
  cout<< "///Main Program///\n";
  while(1)
  {
-   cout<< "\nPrograms:\n";
+   cout<< "\nPrograms\n\n";
    cout<< "1.  for Program to add two numbers\n";
    cout<< "2.  for Program to subtract two numbers\n";
    cout<< "3.  for Program to multiply two numbers\n";
@@ -385,8 +423,9 @@ int main()
    cout<< "17. for Program to swap two entered numbers using two ways\n";
    cout<< "18. for Program to convert Decimal number to Binary number\n";
    cout<< "19. for Program to display sizes of various data types in your system\n";
+   cout<< "20. for Program to show all the ASCII Codes\n";
    cout<< "Anything else to exit!\n";
-   cout<< "choice: ";
+   cout<< "\nchoice: ";
    cin>> choice;
    switch(choice)
    {
@@ -427,6 +466,8 @@ int main()
      case 18: deci_to_bin();
               break;
      case 19: sizeof_data_types();
+              break;
+     case 20: ascii();
               break;
      default: cout<< "Exiting...\n\n";
               cout<< TAB<< " =================================\n";
