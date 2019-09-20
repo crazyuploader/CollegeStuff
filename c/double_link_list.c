@@ -23,7 +23,7 @@ void append()
     }
     else
     {
-        struct node* p;
+        struct node *p;
         p=START;
         while(p->right!=NULL)
         {
