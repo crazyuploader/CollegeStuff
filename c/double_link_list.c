@@ -24,7 +24,13 @@ void insert_begin()
     temp=createnode();
     printf("\nEnter a value for a node: ");
     scanf("%d",&item);
-
+    if(START=NULL)
+    {
+        temp->left=NULL;
+        temp->right=NULL;
+        temp->data=item;
+        START=temp;
+    }
 }
 
 void insert_last()
