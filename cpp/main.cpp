@@ -52,14 +52,35 @@ int base_pow()
 
 int division()
 {
-  float a, b;
-  cout << "///Program to divide two numbers///" << endl << endl << endl;
-  cout << "Enter dividend: ";
-  cin >> a;
-  cout << "Enter divisor: ";
-  cin >> b;
-  cout << "Final answer is: " << a / b;
+  int a, b;
+  cout<< "///Program to divide two numbers///"<< endl<< endl<< endl;
+  cout<< "\nEnter dividend: ";
+  cin>> a;
+  cout<< "\nEnter divisor: ";
+  cin>> b;
+  cout<< "\nQuotient  = "<< a/b<< endl;
+  cout<< "\nRemainder = "<< a%b<< endl;
   return 0;
+}
+
+int even_odd()
+{
+    int a;
+    cout<< "///Program to display whether or not a program is even or odd\n"<< endl<< endl<< endl;
+    cout<< "Enter number: ";
+    cin>> a;
+    if(a%2==0) //if-else condition to check whether or not entered number leaves 0 as its remainder
+    {
+        cout<< "\nEntered number "<< a<< " is even.\n";
+    }
+    else
+    {
+        cout<< "\nEntered number "<< a<< " is odd.\n";
+    }
+    /*Alternative way to do the same work without if-else condition
+    (a%2==0)?cout<< "\nEntered number "<< a<< " is even.\n":cout<< "\nEntered number "<< a<< " is odd.\n";
+    */
+    return 0;
 }
 
 int factorial()
@@ -124,7 +145,7 @@ int greater_3()
   return 0;
 }
 
-int reverse()
+int reverse_2()
 {
     int a,b=0,c;
     cout<< "///Program to reverse number///"<< endl<< endl<< endl;
@@ -224,62 +245,260 @@ int multiplication()
   return 0;
 }
 
+int armstrong()
+{
+    int num,i,r,temp,sum=0;
+    cout<< "///Program to check whether or not entered number is Armstrong///"<< endl<< endl<< endl;
+    cout<< "Enter number: ";
+    cin>> num;
+    temp=num;
+    while(num>0)
+    {
+        r=num%10;
+        sum=sum+(r*r*r);
+        num=num/10;
+    }
+    if(temp==sum) //If-else condition to whether or not the number is equal to the sum of cubes of its digits
+    {
+        cout<< "\nEntered number "<< temp<< " is Armstrong.\n";
+    }
+    else
+    {
+        cout<< "\nEntered number "<< temp<< " is not Armstrong.\n";
+    }
+    /* Alternative way to do the same work without if-else condition
+    (temp==sum)?cout<< "\nEntered number "<< temp<< " is Armstrong.\n":cout<< "\nEntered number "<< temp<< " is not Armstrong.\n";
+    */
+    return 0;
+}
+
+int sum_digits()
+{
+    int num,sum=0,r,temp;
+    cout<< "///Program to display sum of its digits///"<< endl<< endl<< endl;
+    cout<< "Enter number: ";
+    cin>> num;
+    temp=num;
+    while(num!=0)
+    {
+        r=num%10;
+        sum=sum+r;
+        num=num/10;
+    }
+    cout<< "\nSum of entered number "<< temp<< " is "<< sum;
+    return 0;
+}
+
+int number_swap()
+{
+    int choice,a,b;
+    cout<< "///Program to Swapping two entered numbers///"<< endl<< endl<< endl;
+    while(1)
+    {
+        cout<< "\nchoices\n";
+        cout<< "\n1. for Swapping using + and -";
+        cout<< "\n2. for Swapping using * and /";
+        cout<< "\nAnything else and off you go!\n";
+        cout<< "\nchoice: ";
+        cin>> choice;
+        switch(choice)
+        {
+            case 1:  cout<< "\nUsing + and -"<< endl;
+                     cout<< "\nEnter number a: ";
+                     cin>> a;
+                     cout<< "\nEnter number b: ";
+                     cin>> b;
+                     a=a+b;
+                     b=a-b;
+                     a=a-b;
+                     cout<< "After swapping a is "<< a<< " and b is "<< b;
+                     break;
+            case 2:  cout<< "\nUsing * and /"<< endl;
+                     cout<< "\nEnter number a: ";
+                     cin>> a;
+                     cout<< "\nEnter number b: ";
+                     cin>> b;
+                     a=a*b;
+                     b=a/b;
+                     a=a/b;
+                     cout<< "After swapping a is "<< a<< " and b is "<< b;
+                     break;
+            default: cout<< "Exiting...\n\n";
+                     cout<< TAB<< " =================================\n";
+                     cout<< TAB<< "||Created by Jugal Kishore -- 2019||"<< NEWLINE;
+                     cout<< TAB<< " =================================\n";
+                     exit(0);
+        }
+    }
+    return 0;
+}
+
+int deci_to_bin()
+{
+    int i,num,r[10],j;
+    cout<< "///Program to convert entered Decimal number to Binary number///"<< endl<< endl<< endl;
+    cout<< "Enter number: ";
+    cin>> num;
+    for(i=0;num>0;i++)
+    {
+        r[i]=num%2;
+        num=num/2;
+    }
+    cout<< "\nBinary number of entered number is: ";
+    for(j=i-1;j>=0;j--)
+        {
+            cout<< r[j];
+        }
+    return 0;
+}
+
+int sizeof_data_types()
+{
+    cout<< "///Program to display various sizes of data types in your system///"<< endl<< endl<< endl;
+    cout<< "Size of 'char' type is "<< sizeof(char)<< " bytes.\n";
+    cout<< "Size of 'int' type is "<< sizeof(int)<< " bytes.\n";
+    cout<< "Size of 'float' type is "<< sizeof(float)<< " bytes.\n";
+    cout<< "Size of 'double' type is "<< sizeof(double)<< " bytes.\n";
+    return 0;
+}
+
+int ascii()
+{
+    int choice,a;
+    cout<< "///Program to display all the ASCII codes///"<< endl<< endl<< endl;
+    while(1)
+    {
+        cout<< "\nchoices\n";
+        cout<< "\n1. for all the ASCII Codes\n";
+        cout<< "\n2. for the ASCII Codes you can see and make sense of\n";
+        cout<< "\nAnything else and off you go!\n";
+        cout<< "\nchoice: ";
+        cin>> choice;
+        switch(choice)
+        {
+            case 1:  a=0;
+                     while(a!=127)
+                         {
+                             cout<< "\nASCII Code for "<< a<< " is "<< char(a);
+                             a++;
+                         }
+                     cout<< endl;
+                     break;
+            case 2:  a=32;
+                     while(a!=127)
+                         {
+                             cout<< "\nASCII Code for "<< a<< " is "<< char(a);
+                             a++;
+                         }
+                     cout<< endl;
+                     break;
+            default: cout<< "Exiting...\n\n";
+                     cout<< TAB<< " =================================\n";
+                     cout<< TAB<< "||Created by Jugal Kishore -- 2019||"<< NEWLINE;
+                     cout<< TAB<< " =================================\n";
+                     exit(0);
+        }
+    }
+    return 0;
+}
+
+int factors_of_numbers()
+{
+    int a,i;
+    cout<< "///Program to display all the factors an entered numbers///"<< endl<< endl<< endl;
+    cout<< "Enter number: ";
+    cin>> a;
+    cout<< "\nFactors of entered number "<< a<< " is:\n\n";
+    for(i=1;i<=a;i++)
+    {
+        if(a%i==0)
+        {
+            cout<< " "<< i<< " ";
+        }
+    }
+    return 0;
+}
+
 int main()
 {
  int choice;
  cout<< "///Main Program///\n";
  while(1)
  {
-   cout<< "\nPrograms:\n";
-   cout<< "1 for Program to add two numbers\n";
-   cout<< "2 for Program to subtract two numbers\n";
-   cout<< "3 for Program to multiply two numbers\n";
-   cout<< "4 for Program to perform division\n";
-   cout<< "5 for Program to calculate factorial\n";
-   cout<< "6 for Program to show greatest number from 2 numbers\n";
-   cout<< "7 for Program to show greatest number from 3 numbers\n";
-   cout<< "8 for Program to calculate power of a number\n";
-   cout<< "9 for for Program to reverse entered number\n";
-   cout<< "10 Program to check if entered number is Palindrome or not\n";
-   cout<< "11 for Program to get average of entered number(s)\n";
-   cout<< "12 for Program to show table of entered number\n";
-   cout<< "13 for Program to check if entered number is Prime or not\n";
+   cout<< "\nPrograms\n\n";
+   cout<< "1.  for Program to add two numbers\n";
+   cout<< "2.  for Program to subtract two numbers\n";
+   cout<< "3.  for Program to multiply two numbers\n";
+   cout<< "4.  for Program to perform division\n";
+   cout<< "5.  for Program to check whether the entered number is even or odd\n";
+   cout<< "6.  for Program to calculate factorial\n";
+   cout<< "7.  for Program to show greatest number from 2 numbers\n";
+   cout<< "8.  for Program to show greatest number from 3 numbers\n";
+   cout<< "9.  for Program to calculate power of a number\n";
+   cout<< "10. for for Program to reverse entered number\n";
+   cout<< "11. Program to check if entered number is Palindrome or not\n";
+   cout<< "12. for Program to get average of entered number(s)\n";
+   cout<< "13. for Program to show table of entered number\n";
+   cout<< "14. for Program to check if entered number is Prime or not\n";
+   cout<< "15. for Program to check whether or not entered number is Armstrong\n";
+   cout<< "16. for Program to display sum of its digits\n";
+   cout<< "17. for Program to swap two entered numbers using two ways\n";
+   cout<< "18. for Program to convert Decimal number to Binary number\n";
+   cout<< "19. for Program to display sizes of various data types in your system\n";
+   cout<< "20. for Program to show all the ASCII Codes\n";
+   cout<< "21. for Program to show all the factors of an entered number\n";
    cout<< "Anything else to exit!\n";
-   cout<< "choice: ";
+   cout<< "\nchoice: ";
    cin>> choice;
    switch(choice)
    {
-     case 1: add_2();
-             break;
-     case 2: subtract_2();
-             break;
-     case 3: multiplication();
-             break;
-     case 4: division();
-             break;
-     case 5: factorial();
-             break;
-     case 6: greater_2();
-             break;
-     case 7: greater_3();
-             break;
-     case 8: base_pow();
-             break;
-     case 9: reverse();
-             break;
-     case 10: palindrome();
-             break;
-     case 11: average();
-             break;
-     case 12: table();
-             break;
-     case 13: prime();
-             break;
+     case 1:  add_2();
+              break;
+     case 2:  subtract_2();
+              break;
+     case 3:  multiplication();
+              break;
+     case 4:  division();
+              break;
+     case 5:  even_odd();
+              break;
+     case 6:  factorial();
+              break;
+     case 7:  greater_2();
+              break;
+     case 8:  greater_3();
+              break;
+     case 9:  base_pow();
+              break;
+     case 10: reverse_2();
+              break;
+     case 11: palindrome();
+              break;
+     case 12: average();
+              break;
+     case 13: table();
+              break;
+     case 14: prime();
+              break;
+     case 15: armstrong();
+              break;
+     case 16: sum_digits();
+              break;
+     case 17: number_swap();
+              break;
+     case 18: deci_to_bin();
+              break;
+     case 19: sizeof_data_types();
+              break;
+     case 20: ascii();
+              break;
+     case 21: factors_of_numbers();
+              break;
      default: cout<< "Exiting...\n\n";
               cout<< TAB<< " =================================\n";
               cout<< TAB<< "||Created by Jugal Kishore -- 2019||"<< NEWLINE;
               cout<< TAB<< " =================================\n";
-             exit(0);
+              exit(0);
    }
    cout<<"\n";
  }

@@ -9,7 +9,7 @@ int main()
   float avg = 0;
   cout << "///Program to display average of entered n numbers///" << endl << endl << endl;
   cout << "Enter number of numbers you want to get average of: ";
-  cin >> n;
+  cin >> n; //Number of numbers user need to get average of//
   for (i = 1; i <= n; i++) {
     cout << i << " number: ";
     cin >> a[i];
