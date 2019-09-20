@@ -80,7 +80,7 @@ void insert_specified()
     for(i=0;i<loc;i++)
     {
         temp=temp->right;
-        if(temp=NULL)
+        if(temp==NULL)
         {
             printf("\nThere are less than %d element(s)",loc);
         }
@@ -91,6 +91,18 @@ void insert_specified()
     temp->right=pointer;
     temp->right->left=pointer;
     printf("\nNode inserted at Address = %d and its value = %d",pointer,item);
+}
+
+void display()
+{
+    struct node *pointer;
+    printf("Printing values...");
+    pointer=START;
+    while(pointer!=NULL)
+    {
+        printf("\n%d",pointer->data);
+        pointer=pointer->right;
+    }
 }
 
 void main()
@@ -104,6 +116,7 @@ void main()
         printf("\n1. Insert a Node at beginning\n");
         printf("\n2. Insert a Node at last\n");
         printf("\n3. Insert a Node after specified location\n");
+        printf("\n4. Display the values of every node\n");
         printf("\nAnything else to exit!\n");
         printf("\nchoice: ");
         scanf("%d",&choice);
@@ -114,6 +127,8 @@ void main()
             case 2:  insert_last();
                      break;
             case 3:  insert_specified();
+                     break;
+            case 4: display();
                      break;
             default: printf("Exiting...\n\n");
                      printf("\t =================================\n");
