@@ -4,7 +4,7 @@ struct node
 {
   int data;
   struct node* left; //Pointer to left node
-  struct node* right; //Pointer to right node
+  struct node* right; //Pointer to Right node
 };
 
 struct node *START=NULL;
