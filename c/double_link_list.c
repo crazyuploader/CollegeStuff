@@ -17,6 +17,16 @@ struct node *createnode()
     return n;
 };
 
+void insert_begin()
+{
+    struct node *temp;
+    int item;
+    temp=createnode();
+    printf("\nEnter a value for a node: ");
+    scanf("%d",&item);
+
+}
+
 void insert_last()
 {
     struct node *temp,*t;
