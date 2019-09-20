@@ -9,30 +9,36 @@ struct node
 };
 
 struct node *START;
-struct node *createnode()
-{
-    struct node *n;
-    n=(struct node*)malloc(sizeof(struct node));
-    return n;
-};
+
 void insert_begin()
 {
-    struct node *temp, *t;
-    temp=createnode();
-    printf("Enter value for node: ");
-    scanf("%d",temp->data);
+    struct node *temp,*t;
+    int item;
+    temp=(struct node*)malloc(sizeof(struct node));
+    printf("\nEnter value for node: ");
+    scanf("%d",&item);
+    temp->data=item;
     if(START==NULL)
     {
-        START=temp;
-        printf("Node inserted at Address = %d and its value = ",temp,temp->data);
+        temp->right=NULL;
+        temp->left=NULL;
+        START=temp->data;
+        printf("Node inserted at Address = %d and its value = %d",temp,item);
     }
     else
     {
         t=START;
+        while(t->right!=NULL)
+        {
+            t=t->right;
+        }
+        t->right=temp;
+        temp->left=t;
+        temp->right=NULL;
     }
 }
 
-int main()
+void main()
 {
     int choice;
     printf("** Menu Driven Program for Double Linked-List **\n");
@@ -46,13 +52,15 @@ int main()
     {
         switch(choice)
         {
-            case 1: insert_begin();
-                    break;
+            case 1:  insert_begin();
+                     break;
             default: printf("Exiting...\n\n");
                      printf("\t =================================\n");
                      printf("\t||Created by Jugal Kishore -- 2019||\n");
                      printf("\t =================================\n");
                      exit(0);
+                     break;
         }
     }
+
 }
