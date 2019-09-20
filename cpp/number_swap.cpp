@@ -4,53 +4,42 @@ using namespace std;
 #define TAB '\t'
 #define NEWLINE '\n'
 
-int first_way()
-{
-    cout<< "Using + and -"<< endl;
-    int a,b;
-    cout<< "Swapping using + and -"<< endl;
-    cout<< "Enter a: ";
-    cin>> a;
-    cout<< "Enter b: ";
-    cin>> b;
-    a=a+b;
-    b=a-b;
-    a=a-b;
-    cout<< "After swapping a is "<< a<< " and b is "<< b;
-}
-
-int second_way()
-{
-    cout<< "Using * and /"<< endl;
-    int a,b;
-    cout<< "Swapping using * and /"<< endl;
-    cout<< "Enter a: ";
-    cin>> a;
-    cout<< "Enter b: ";
-    cin>> b;
-    a=a*b;
-    b=a/b;
-    a=a/b;
-    cout<< "After swapping a is "<< a<< " and b is "<< b;
-}
-
 int main()
 {
-    int choice;
-    cout<<"///Program to Swapping two entered numbers///"<< endl<< endl<< endl;
+    int choice,a,b;
+    cout<< "///Program to Swapping two entered numbers///"<< endl<< endl<< endl;
     while(1)
     {
-        cout<< "\nChoice\n";
-        cout<< "\n1. for Swapping using + and -\n";
-        cout<< "\n2. for Swapping using * and /\n";
+        cout<< "\nchoices\n";
+        cout<< "\n1. for Swapping using + and -";
+        cout<< "\n2. for Swapping using * and /";
+        cout<< "\nAnything else and off you go!\n";
+        cout<< "\nchoice: ";
         cin>> choice;
         switch(choice)
         {
-            case 1:  first_way();
+            case 1:  cout<< "\nUsing + and -"<< endl;
+                     cout<< "\nEnter number a: ";
+                     cin>> a;
+                     cout<< "\nEnter number b: ";
+                     cin>> b;
+                     a=a+b;
+                     b=a-b;
+                     a=a-b;
+                     cout<< "After swapping a is "<< a<< " and b is "<< b;
                      break;
-            case 2:  second_way();
+            case 2:  cout<< "\nUsing * and /"<< endl;
+                     cout<< "\nEnter number a: ";
+                     cin>> a;
+                     cout<< "\nEnter number b: ";
+                     cin>> b;
+                     a=a*b;
+                     b=a/b;
+                     a=a/b;
+                     cout<< "After swapping a is "<< a<< " and b is "<< b;
                      break;
             default: cout<< "Exiting...\n\n";
+                     cout<< NEWLINE<< NEWLINE<< "Created by Jugal Kishore -- 2019"<< NEWLINE;
                      exit(0);
         }
     }
