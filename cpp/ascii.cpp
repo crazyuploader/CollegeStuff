@@ -24,6 +24,7 @@ int main()
                              cout<< "\nASCII Code for "<< a<< " is "<< char(a);
                              a++;
                          }
+                     cout<< endl;
                      break;
             case 2:  a=32;
                      while(a!=127)
@@ -31,6 +32,7 @@ int main()
                              cout<< "\nASCII Code for "<< a<< " is "<< char(a);
                              a++;
                          }
+                     cout<< endl;
                      break;
             default: cout<< "Exiting...\n\n";
                      cout<< NEWLINE<< NEWLINE<< "Created by Jugal Kishore -- 2019"<< NEWLINE;
