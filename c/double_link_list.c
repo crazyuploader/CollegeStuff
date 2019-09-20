@@ -23,7 +23,6 @@ void insert_last()
         temp->right=NULL;
         temp->left=NULL;
         START=temp;
-        printf("Node inserted at Address = %d and its value = %d",temp,item);
     }
     else
     {
@@ -35,22 +34,22 @@ void insert_last()
         t->right=temp;
         temp->left=t;
         temp->right=NULL;
-        printf("Node inserted at Address = %d and its value = %d",temp,item);
     }
+    printf("\nNode inserted at Address = %d and its value = %d",temp,item);
 }
 
 void main()
 {
     int choice;
     printf("///Program for Double Linked-List///\n");
-    printf("\nChoose an option from the following list\n");
-    printf("\n========================================\n");
-    printf("\n1. Insert a Node\n");
-    printf("Anything else to exit!\n");
-    printf("choice: ");
-    scanf("%d",&choice);
     while(1)
     {
+        printf("\n\nChoose an option from the following list\n");
+        printf("\n========================================\n");
+        printf("\n1. Insert a Node\n");
+        printf("\nAnything else to exit!\n");
+        printf("\nchoice: ");
+        scanf("%d",&choice);
         switch(choice)
         {
             case 1:  insert_last();
