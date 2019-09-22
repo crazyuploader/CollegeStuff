@@ -419,6 +419,26 @@ int factors_of_numbers()
     return 0;
 }
 
+int alpha_tri()
+{
+    char ch='A';
+    int i,j,k,m;
+    cout<< "///Program to display alphabet triangle///"<< endl<< endl<< endl;
+    for(i=1;i<=5;i++)
+    {
+        for(j=5;j>=i;j--)
+            cout<< " ";
+        for(k=1;k<=i;k++)
+            cout<<ch++;
+            ch--;
+        for(m=1;m<i;m++)
+            cout<< --ch;
+        cout<< "\n";
+        ch='A';
+    }
+    return 0;
+}
+
 int main()
 {
  int choice;
@@ -447,6 +467,7 @@ int main()
    cout<< "19. for Program to display sizes of various data types in your system\n";
    cout<< "20. for Program to show all the ASCII Codes\n";
    cout<< "21. for Program to show all the factors of an entered number\n";
+   cout<< "22. for Program to display alphabet triangle\n";
    cout<< "Anything else to exit!\n";
    cout<< "\nchoice: ";
    cin>> choice;
@@ -493,6 +514,8 @@ int main()
      case 20: ascii();
               break;
      case 21: factors_of_numbers();
+              break;
+     case 22: alpha_tri();
               break;
      default: cout<< "Exiting...\n\n";
               cout<< TAB<< " =================================\n";
