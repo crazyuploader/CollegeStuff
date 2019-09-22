@@ -421,9 +421,11 @@ int factors_of_numbers()
 
 int alpha_tri()
 {
-    char ch='A';
+    char ch;
     int i,j,k,m;
     cout<< "///Program to display alphabet triangle///"<< endl<< endl<< endl;
+    cout<< "Enter any character: ";
+    cin>> ch;
     for(i=1;i<=5;i++)
     {
         for(j=5;j>=i;j--)
@@ -434,7 +436,7 @@ int alpha_tri()
         for(m=1;m<i;m++)
             cout<< --ch;
         cout<< "\n";
-        ch='A';
+        ch;
     }
     return 0;
 }
