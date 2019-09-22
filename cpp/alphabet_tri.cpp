@@ -4,4 +4,7 @@ using namespace std;
 #define NEWLINE '\n'
 
 int main()
+{
+
+}
 
