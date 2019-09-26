@@ -8,9 +8,9 @@ int main()
     int base,exponent;
     long long result=1;
     cout<< "///Program to Calculate Power of a Number///"<<endl<<endl<<endl;
-    cout<< "Enter base: ";
+    cout<< "Enter Base: ";
     cin>> base;
-    cout<< "Enter exponent: ";
+    cout<< "Enter Exponent: ";
     cin>> exponent;
     while(exponent!=0)
     {

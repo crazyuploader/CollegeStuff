@@ -7,8 +7,8 @@ int main()
 {
     char ch;
     int i,j,k,m;
-    cout<< "///Program to display alphabet triangle///"<< endl<< endl<< endl;
-    cout<< "Enter any character: ";
+    cout<< "///Program to display Alphabet Triangle///"<< endl<< endl<< endl;
+    cout<< "Enter any Character: ";
     cin>> ch;
     for(i=1;i<=5;i++)
     {
