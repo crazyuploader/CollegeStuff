@@ -7,39 +7,40 @@ using namespace std;
 int add_2()
 {
     int a,b;
-    cout<< "///Program to add two number///"<<endl<<endl<<endl;
-    cout<< "Enter first number: ";
+    cout<< "///Program to Add two Number///"<<endl<<endl<<endl;
+    cout<< "Enter First Number: ";
     cin>> a;
-    cout<< "Enter second number: ";
+    cout<< "Enter Second Number: ";
     cin>> b;
-    cout<< "Addition of entered number is: "<< a+b<<endl;
+    cout<< "Addition of entered number is = "<< a+b;
     return 0;
 }
 
 int average()
 {
-  int a[20], i, n;
-  float avg = 0;
-  cout << "///Program to display average of entered n numbers///" << endl << endl << endl;
-  cout << "Enter number of numbers you want to get average of: ";
-  cin >> n;
-  for (i = 1; i <= n; i++) {
-    cout << i << " number: ";
-    cin >> a[i];
-    avg = avg + a[i];
-  }
-  cout << "Average of " << n << " number(s) is: " << avg / n<<endl;
-  return 0;
+    int a[20], i, n;
+    float avg = 0;
+    cout<< "///Program to Display Average of Entered n Numbers///"<< endl<< endl<< endl;
+    cout<< "Enter Number of Numbers you want to get Average of: ";
+    cin>> n;
+    for(i=1;i<=n;i++)
+        {
+            cout << i << " Number: ";
+            cin >> a[i];
+            avg = avg + a[i];
+        }
+    cout<< "Average of "<< n<< " Number(s) is = "<< avg/n;
+    return 0;
 }
 
-int base_pow()
+int base_exponent_power()
 {
     int base,exponent;
     long long result=1;
     cout<< "///Program to Calculate Power of a Number///"<<endl<<endl<<endl;
-    cout<< "Enter base: ";
+    cout<< "Enter Base: ";
     cin>> base;
-    cout<< "Enter exponent: ";
+    cout<< "Enter Exponent: ";
     cin>> exponent;
     while(exponent!=0)
     {
@@ -50,33 +51,33 @@ int base_pow()
     return 0;
 }
 
-int division()
+int division_2()
 {
-  int a, b;
-  cout<< "///Program to divide two numbers///"<< endl<< endl<< endl;
-  cout<< "\nEnter dividend: ";
-  cin>> a;
-  cout<< "\nEnter divisor: ";
-  cin>> b;
-  cout<< "\nQuotient  = "<< a/b<< endl;
-  cout<< "\nRemainder = "<< a%b<< endl;
-  return 0;
+    int a, b;
+    cout<< "///Program to divide two numbers///"<< endl<< endl<< endl;
+    cout<< "\nEnter Dividend: ";
+    cin>> a;
+    cout<< "\nEnter Divisor: ";
+    cin>> b;
+    cout<< "\nQuotient  = "<< a/b<< endl;
+    cout<< "\nRemainder = "<< a%b<< endl;
+    return 0;
 }
 
 int even_odd()
 {
     int a;
-    cout<< "///Program to display whether or not a program is even or odd\n"<< endl<< endl<< endl;
+    cout<< "///Program to Display Whether or not Entered Number is Even or Odd///"<< endl<< endl<< endl;
     cout<< "Enter number: ";
     cin>> a;
     if(a%2==0) //if-else condition to check whether or not entered number leaves 0 as its remainder
-    {
-        cout<< "\nEntered number "<< a<< " is even.\n";
-    }
+        {
+            cout<< "\nEntered Number "<< a<< " is Even.\n";
+        }
     else
-    {
-        cout<< "\nEntered number "<< a<< " is odd.\n";
-    }
+        {
+            cout<< "\nEntered Number "<< a<< " is Odd.\n";
+        }
     /*Alternative way to do the same work without if-else condition
     (a%2==0)?cout<< "\nEntered number "<< a<< " is even.\n":cout<< "\nEntered number "<< a<< " is odd.\n";
     */
@@ -86,136 +87,135 @@ int even_odd()
 int factorial()
 {
     int n,i,fac=1;
-    cout<< "///Program to display factorial of an entered number///"<< endl<< endl<< endl;
-    cout<< "Enter number: ";
+    cout<< "///Program to Display Factorial of an Entered Number///"<< endl<< endl<< endl;
+    cout<< "Enter Number: ";
     cin>> n;
     for(i=1;i<=n;i++)
     {
         fac=fac*i;
     }
-    cout<< "Factorial of "<< n<< " is "<< fac;
+    cout<< "Factorial of "<< n<< " is = "<< fac;
     return 0;
 }
 
 int greater_2()
 {
-  int a, b;
-  cout << "///Program to display greater number///" << endl << endl << endl;
-  cout << "Enter first number: ";
-  cin >> a;
-  cout << "Enter second number: ";
-  cin >> b;
-  (a == b) ? cout << "Entered number are equal":(a>b)?cout<<"Greater number is: "<<a: cout << "Greater number is: " << b;
-  return 0;
+    int a, b;
+    cout<< "///Program to Display Greater Number///"<< endl<< endl<< endl;
+    cout<< "Enter First Number: ";
+    cin>> a;
+    cout<< "Enter Second Number: ";
+    cin>> b;
+    (a==b)?cout<< "Entered Number are Equal":(a>b)?cout<<"Greater Number is = "<<a:cout<< "Greater Number is = "<< b;
+    return 0;
 }
 
 int greater_3()
 {
-  int a, b, c;
-  cout << "///Program to display greatest number///" << endl << endl << endl;
-  cout << "Enter first number: ";
-  cin >> a;
-  cout << "Enter second number: ";
-  cin >> b;
-  cout << "Enter third number: ";
-  cin >> c;
-    if (a > b)
-    {
-      if (a > c)
-	     {
-         cout << "Greatest number is: " << a;
-       }
-      else
-	     {
-        cout << "Greatest number is: " << c;
-       }
-     }
-
+    int a,b,c;
+    cout<< "///Program to Display Greatest Number among 3 Number(s)///"<< endl<< endl<< endl;
+    cout<< "Enter First Number: ";
+    cin>> a;
+    cout<< "Enter Second Number: ";
+    cin>> b;
+    cout<< "Enter Third Number: ";
+    cin>> c;
+    if(a>b)
+        {
+            if(a>c)
+                {
+                    cout << "Greatest Number is = " << a;
+                }
+            else
+                {
+                    cout << "Greatest Number is = " << c;
+                }
+        }
     else
-    {
-      if (b > c)
-	     {
-         cout << "Greatest number is: " << b;
-       }
-      else
-	     {
-         cout << "Greatest number is: " << c;
-       }
-    }
-  return 0;
+        {
+            if(b>c)
+                {
+                    cout << "Greatest Number is = " << b;
+                }
+            else
+                {
+                    cout << "Greatest Number is = " << c;
+                }
+        }
+    return 0;
 }
 
-int reverse_2()
+int reverse()
 {
     int a,b=0,c;
-    cout<< "///Program to reverse number///"<< endl<< endl<< endl;
-    cout<< "Enter the Number to reverse: ";
+    cout<< "///Program to Reverse Number///"<< endl<< endl<< endl;
+    cout<< "Enter the Number to Reverse: ";
     cin>> a;
     while(a>0)
-    {
-        c=a%10;
-        b=b*10+c;
-        a=a/10;
-    }
-    cout<< "Revered Number is: "<< b;
+        {
+            c=a%10;
+            b=b*10+c;
+            a=a/10;
+        }
+    cout<< "Revered Number is = "<< b;
     return 0;
 }
 
 int palindrome()
 {
     int a,b=0,c,pal;
-    cout<< "///Program to check for Palindrome///"<< endl<< endl<< endl;
-    cout<< "Enter the Number to reverse: ";
+    cout<< "///Program to Check Whether or not Entered Number is Palindrome///"<< endl<< endl<< endl;
+    cout<< "Enter the Number: ";
     cin>> a;
     pal=a;
     while(a>0)
-    {
-        c=a%10;
-        b=b*10+c;
-        a=a/10;
-    }
+        {
+            c=a%10;
+            b=b*10+c;
+            a=a/10;
+        }
     if(pal==b)
-    {
-        cout<< "Number is Palindrome";
-    }
+        {
+            cout<< "Number is Palindrome";
+        }
     else
-    {
-        cout<< "Number is not Palindrome";
-    }
+        {
+            cout<< "Number is not Palindrome";
+        }
     return 0;
 }
 
 int prime()
 {
     int n,i,m=0;
-    cout<< "///Program to check Prime Number///" << endl<< endl<< endl;
-    cout<< "Enter the number to check for Prime: ";
+    cout<< "///Program to Check Prime Number///"<< endl<< endl<< endl;
+    cout<< "Enter the Number: ";
     cin>> n;
     for(i=1;i<=n;i++)
-    {
-        if(n%i==0)
-        m++;
-    }
+        {
+            if(n%i==0)
+            m++;
+        }
     if(m==2)
-    {
-        cout<< "Number is Prime";
-    }
+        {
+            cout<< "Number is Prime";
+        }
     else
-    {
-        cout<< "Number is not Prime";
-    }
+        {
+            cout<< "Number is not Prime";
+        }
     return 0;
 }
 
 int subtract_2()
 {
     int a,b;
-    cout<< "///Program to subtract two numbers///"<<endl<<endl<<endl;
-    cout<< "Enter first number: ";
+    cout<< "///Program to Subtract two Number(s)///"<<endl<<endl<<endl;
+    cout<< "Enter First Number: ";
     cin>> a;
-    cout<< "Enter second number: ";
+    cout<< "Enter Second Number: ";
     cin>> b;
-    cout<< "The difference of these two numbers is: "<< a-b;
+    cout<< "The Difference of these two Entered Number(s) is = "<< a-b;
     return 0;
 
 }
@@ -223,33 +223,33 @@ int subtract_2()
 int table()
 {
     int a,i;
-    cout<< "///Program to display table of entered number///"<<endl<<endl<<endl;
-    cout<< "Enter number: ";
+    cout<< "///Program to Display Table of Entered Number///"<<endl<<endl<<endl;
+    cout<< "Enter Number: ";
     cin>> a;
     for(i=1;i<=10;++i)
         {
-          cout<< "\n" << a << " * " << i << " = " << a*i ;
+          cout<< "\n"<< a<< " * "<< i<< " = "<< a*i;
         }
     return 0;
 }
 
-int multiplication()
+int multiplication_2()
 {
-  int a,b;
-  cout<< "///Program to display multiplication table of entered number///"<<endl<<endl<<endl;
-  cout<< "Enter 1st number: ";
-  cin>> a;
-  cout<< "Enter 2nd number: ";
-  cin>> b;
-  cout<< "Answer is "<< a*b;
-  return 0;
+    int a,b;
+    cout<< "///Program to Display Multiplication of two Entered Number(s)///"<<endl<<endl<<endl;
+    cout<< "Enter First Number: ";
+    cin>> a;
+    cout<< "Enter Second Number: ";
+    cin>> b;
+    cout<< "Answer is "<< a*b;
+    return 0;
 }
 
 int armstrong()
 {
     int num,i,r,temp,sum=0;
-    cout<< "///Program to check whether or not entered number is Armstrong///"<< endl<< endl<< endl;
-    cout<< "Enter number: ";
+    cout<< "///Program to Check Whether or not Entered Number is Armstrong///"<< endl<< endl<< endl;
+    cout<< "Enter Number: ";
     cin>> num;
     temp=num;
     while(num>0)
@@ -260,11 +260,11 @@ int armstrong()
     }
     if(temp==sum) //If-else condition to whether or not the number is equal to the sum of cubes of its digits
     {
-        cout<< "\nEntered number "<< temp<< " is Armstrong.\n";
+        cout<< "\nEntered Number "<< temp<< " is Armstrong.\n";
     }
     else
     {
-        cout<< "\nEntered number "<< temp<< " is not Armstrong.\n";
+        cout<< "\nEntered Number "<< temp<< " is not Armstrong.\n";
     }
     /* Alternative way to do the same work without if-else condition
     (temp==sum)?cout<< "\nEntered number "<< temp<< " is Armstrong.\n":cout<< "\nEntered number "<< temp<< " is not Armstrong.\n";
@@ -275,8 +275,8 @@ int armstrong()
 int sum_digits()
 {
     int num,sum=0,r,temp;
-    cout<< "///Program to display sum of its digits///"<< endl<< endl<< endl;
-    cout<< "Enter number: ";
+    cout<< "///Program to Display Sum of its Digit(s)///"<< endl<< endl<< endl;
+    cout<< "Enter Number: ";
     cin>> num;
     temp=num;
     while(num!=0)
@@ -285,43 +285,54 @@ int sum_digits()
         sum=sum+r;
         num=num/10;
     }
-    cout<< "\nSum of entered number "<< temp<< " is "<< sum;
+    cout<< "\nSum of Digit(s) of Entered Number "<< temp<< " is "<< sum;
     return 0;
 }
 
 int number_swap()
 {
-    int choice,a,b;
-    cout<< "///Program to Swapping two entered numbers///"<< endl<< endl<< endl;
+    int choice,a,b,c;
+    cout<< "///Program to Swapping of two Entered Number(s)///"<< endl<< endl<< endl;
     while(1)
     {
         cout<< "\nchoices\n";
-        cout<< "\n1. for Swapping using + and -";
-        cout<< "\n2. for Swapping using * and /";
+        cout<< "\n1. for Swapping using third variable";
+        cout<< "\n2. for Swapping using + and -";
+        cout<< "\n3. for Swapping using * and /";
         cout<< "\nAnything else and off you go!\n";
         cout<< "\nchoice: ";
         cin>> choice;
         switch(choice)
         {
-            case 1:  cout<< "\nUsing + and -"<< endl;
-                     cout<< "\nEnter number a: ";
+            case 1:  cout<< "\nUsing third variable";
+                     cout<< "\nEnter Number a: ";
                      cin>> a;
-                     cout<< "\nEnter number b: ";
+                     cout<< "\nEnter Number b: ";
+                     cin>> b;
+                     c=a;
+                     a=b;
+                     b=c;
+                     cout<< "After Swapping a is = "<< a<< " and b is = "<<b;
+                     break;
+            case 2:  cout<< "\nUsing + and -"<< endl;
+                     cout<< "\nEnter Number a: ";
+                     cin>> a;
+                     cout<< "\nEnter Number b: ";
                      cin>> b;
                      a=a+b;
                      b=a-b;
                      a=a-b;
-                     cout<< "After swapping a is "<< a<< " and b is "<< b;
+                     cout<< "After Swapping a is = "<< a<< " and b is = "<< b;
                      break;
-            case 2:  cout<< "\nUsing * and /"<< endl;
-                     cout<< "\nEnter number a: ";
+            case 3:  cout<< "\nUsing * and /"<< endl;
+                     cout<< "\nEnter Number a: ";
                      cin>> a;
-                     cout<< "\nEnter number b: ";
+                     cout<< "\nEnter Number b: ";
                      cin>> b;
                      a=a*b;
                      b=a/b;
                      a=a/b;
-                     cout<< "After swapping a is "<< a<< " and b is "<< b;
+                     cout<< "After Swapping a is = "<< a<< " and b is = "<< b;
                      break;
             default: cout<< "Exiting...\n\n";
                      cout<< TAB<< " =================================\n";
@@ -333,18 +344,20 @@ int number_swap()
     return 0;
 }
 
-int deci_to_bin()
+int convertDecimalToBinary()
 {
-    int i,num,r[10],j;
-    cout<< "///Program to convert entered Decimal number to Binary number///"<< endl<< endl<< endl;
-    cout<< "Enter number: ";
+    int i,num,deci_num,r[10],j;
+    cout<< "\nConverting Decimal Number to Binary Number"<< endl<< endl;
+    cout<< "\nEnter Decimal Number: ";
     cin>> num;
+    deci_num=num;
     for(i=0;num>0;i++)
     {
         r[i]=num%2;
         num=num/2;
     }
-    cout<< "\nBinary number of entered number is: ";
+    cout<< "Entered Decimal Number is = "<< deci_num<< endl;
+    cout<< "Its Binary equivalent is = ";
     for(j=i-1;j>=0;j--)
         {
             cout<< r[j];
@@ -352,25 +365,73 @@ int deci_to_bin()
     return 0;
 }
 
+int convertBinaryToDecimal()
+{
+    long long num,bin_num;
+    int i,r=0,deci=0,base=1;
+    cout<< "\nConverting Binary Number to Decimal Number"<< endl<< endl;
+    cout<< "\nEnter binary number(1s and 0s): ";
+    cin>> num;
+    bin_num=num;
+    for(i=0;num>0;i++)
+    {
+        r=num%10;
+        deci=deci+r*base;
+        num=num/10;
+        base=base*2;
+    }
+    cout << "Entered Binary Number is = "<< bin_num<< endl;
+    cout << "Its Decimal Equivalent is = "<< deci;
+    return 0;
+}
+
+int number_conversion()
+{
+    long long n;
+    int choice;
+    cout<< "///Program to convert Numbers///"<< endl<< endl<< endl;
+    while(1)
+    {
+        cout<< "\nchoices\n";
+        cout<< "\n1. for Decimal to Binary";
+        cout<< "\n2. for Binary to Decimal";
+        cout<< "\nAnything else and off you go!\n";
+        cout<< "\nchoice: ";
+        cin>> choice;
+        switch(choice)
+        {
+            case 1:  convertDecimalToBinary();
+                     break;
+            case 2:  convertBinaryToDecimal();
+                     break;
+            default: cout<< "Exiting...\n\n";
+                     cout<< TAB<< " =================================\n";
+                     cout<< TAB<< "||Created by Jugal Kishore -- 2019||"<< NEWLINE;
+                     cout<< TAB<< " =================================\n";
+                     exit(0);
+        }
+    }
+}
+
 int sizeof_data_types()
 {
-    cout<< "///Program to display various sizes of data types in your system///"<< endl<< endl<< endl;
-    cout<< "Size of 'char' type is "<< sizeof(char)<< " bytes.\n";
-    cout<< "Size of 'int' type is "<< sizeof(int)<< " bytes.\n";
-    cout<< "Size of 'float' type is "<< sizeof(float)<< " bytes.\n";
-    cout<< "Size of 'double' type is "<< sizeof(double)<< " bytes.\n";
+    cout<< "///Program to Display various size(s) of Data Type(s) in your System///"<< endl<< endl<< endl;
+    cout<< "Size of 'char' Type is "<< sizeof(char)<< " byte(s).\n";
+    cout<< "Size of 'int' Type is "<< sizeof(int)<< " byte(s).\n";
+    cout<< "Size of 'float' Type is "<< sizeof(float)<< " byte(s).\n";
+    cout<< "Size of 'double' Type is "<< sizeof(double)<< " byte(s).\n";
     return 0;
 }
 
 int ascii()
 {
     int choice,a;
-    cout<< "///Program to display all the ASCII codes///"<< endl<< endl<< endl;
+    cout<< "///Program to Display all the ASCII Code(s)///"<< endl<< endl<< endl;
     while(1)
     {
         cout<< "\nchoices\n";
-        cout<< "\n1. for all the ASCII Codes\n";
-        cout<< "\n2. for the ASCII Codes you can see and make sense of\n";
+        cout<< "\n1. for all the ASCII Code(s)\n";
+        cout<< "\n2. for the ASCII Code(s) you can see and make sense of\n";
         cout<< "\nAnything else and off you go!\n";
         cout<< "\nchoice: ";
         cin>> choice;
@@ -405,25 +466,27 @@ int ascii()
 int factors_of_numbers()
 {
     int a,i;
-    cout<< "///Program to display all the factors an entered numbers///"<< endl<< endl<< endl;
+    cout<< "///Program to Display all the Factors an Entered Number///"<< endl<< endl<< endl;
     cout<< "Enter number: ";
     cin>> a;
-    cout<< "\nFactors of entered number "<< a<< " is:\n\n";
+    cout<< "\nFactors of Entered Number "<< a<< " is:\n\n";
     for(i=1;i<=a;i++)
-    {
-        if(a%i==0)
         {
-            cout<< " "<< i<< " ";
+            if(a%i==0)
+            {
+                cout<< " "<< i<< " ";
+            }
         }
-    }
     return 0;
 }
 
 int alpha_tri()
 {
-    char ch='A';
+    char ch;
     int i,j,k,m;
-    cout<< "///Program to display alphabet triangle///"<< endl<< endl<< endl;
+    cout<< "///Program to display Alphabet Triangle///"<< endl<< endl<< endl;
+    cout<< "Enter any Character: ";
+    cin>> ch;
     for(i=1;i<=5;i++)
     {
         for(j=5;j>=i;j--)
@@ -434,7 +497,7 @@ int alpha_tri()
         for(m=1;m<i;m++)
             cout<< --ch;
         cout<< "\n";
-        ch='A';
+        ch;
     }
     return 0;
 }
@@ -446,28 +509,28 @@ int main()
  while(1)
  {
    cout<< "\nPrograms\n\n";
-   cout<< "1.  for Program to add two numbers\n";
-   cout<< "2.  for Program to subtract two numbers\n";
-   cout<< "3.  for Program to multiply two numbers\n";
-   cout<< "4.  for Program to perform division\n";
-   cout<< "5.  for Program to check whether the entered number is even or odd\n";
-   cout<< "6.  for Program to calculate factorial\n";
-   cout<< "7.  for Program to show greatest number from 2 numbers\n";
-   cout<< "8.  for Program to show greatest number from 3 numbers\n";
-   cout<< "9.  for Program to calculate power of a number\n";
-   cout<< "10. for for Program to reverse entered number\n";
-   cout<< "11. Program to check if entered number is Palindrome or not\n";
-   cout<< "12. for Program to get average of entered number(s)\n";
-   cout<< "13. for Program to show table of entered number\n";
-   cout<< "14. for Program to check if entered number is Prime or not\n";
-   cout<< "15. for Program to check whether or not entered number is Armstrong\n";
-   cout<< "16. for Program to display sum of its digits\n";
-   cout<< "17. for Program to swap two entered numbers using two ways\n";
-   cout<< "18. for Program to convert Decimal number to Binary number\n";
-   cout<< "19. for Program to display sizes of various data types in your system\n";
-   cout<< "20. for Program to show all the ASCII Codes\n";
-   cout<< "21. for Program to show all the factors of an entered number\n";
-   cout<< "22. for Program to display alphabet triangle\n";
+   cout<< "1.  for Program to Add two Number(s)\n";
+   cout<< "2.  for Program to Subtract two Number(s)\n";
+   cout<< "3.  for Program to Multiply two number(s)\n";
+   cout<< "4.  for Program to Divide two Number(s)\n";
+   cout<< "5.  for Program to Check Whether the Entered number is Even or Odd\n";
+   cout<< "6.  for Program to Calculate Factorial of an Entered Number\n";
+   cout<< "7.  for Program to Show Greatest Number from 2 Number(s)\n";
+   cout<< "8.  for Program to Show Greatest Number from 3 Number(s)\n";
+   cout<< "9.  for Program to Calculate Power of a Number\n";
+   cout<< "10. for Program to Reverse Entered Number\n";
+   cout<< "11. for Program to Check if Entered Number is Palindrome or not\n";
+   cout<< "12. for Program to Get Average of Entered Number(s)\n";
+   cout<< "13. for Program to Show Table of Entered Number\n";
+   cout<< "14. for Program to Check if Entered Number is Prime or not\n";
+   cout<< "15. for Program to Check Whether or not Entered Number is Armstrong\n";
+   cout<< "16. for Program to Display Sum of its Digit(s)\n";
+   cout<< "17. for Program to Swap two Entered Numbers using three way(s)\n";
+   cout<< "18. for Program to Convert Numbers\n";
+   cout<< "19. for Program to Display Sizes of various Data type(s) in your system\n";
+   cout<< "20. for Program to Show all the ASCII Code(s)\n";
+   cout<< "21. for Program to Show all the Factors of an Entered Number\n";
+   cout<< "22. for Program to Display Alphabet Triangle\n";
    cout<< "Anything else to exit!\n";
    cout<< "\nchoice: ";
    cin>> choice;
@@ -477,9 +540,9 @@ int main()
               break;
      case 2:  subtract_2();
               break;
-     case 3:  multiplication();
+     case 3:  multiplication_2();
               break;
-     case 4:  division();
+     case 4:  division_2();
               break;
      case 5:  even_odd();
               break;
@@ -489,9 +552,9 @@ int main()
               break;
      case 8:  greater_3();
               break;
-     case 9:  base_pow();
+     case 9:  base_exponent_power();
               break;
-     case 10: reverse_2();
+     case 10: reverse();
               break;
      case 11: palindrome();
               break;
@@ -507,7 +570,7 @@ int main()
               break;
      case 17: number_swap();
               break;
-     case 18: deci_to_bin();
+     case 18: number_conversion();
               break;
      case 19: sizeof_data_types();
               break;

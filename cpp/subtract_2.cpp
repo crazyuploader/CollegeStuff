@@ -6,12 +6,12 @@ using namespace std;
 int main()
 {
     int a,b;
-    cout<< "///Program to subtract two numbers///"<<endl<<endl<<endl;
-    cout<< "Enter first number: ";
+    cout<< "///Program to Subtract two Number(s)///"<<endl<<endl<<endl;
+    cout<< "Enter First Number: ";
     cin>> a;
-    cout<< "Enter second number: ";
+    cout<< "Enter Second Number: ";
     cin>> b;
-    cout<< "The difference of these two numbers is: "<< a-b;
+    cout<< "The Difference of these two Entered Number(s) is = "<< a-b;
     cout<< NEWLINE<< NEWLINE<< "Created by Jugal Kishore -- 2019"<< NEWLINE;
     return 0;
 

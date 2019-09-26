@@ -5,11 +5,11 @@ using namespace std;
 
 int main()
 {
-    cout<< "///Program to display various sizes of data types in your system///"<< endl<< endl<< endl;
-    cout<< "Size of 'char' type is "<< sizeof(char)<< " bytes.\n";
-    cout<< "Size of 'int' type is "<< sizeof(int)<< " bytes.\n";
-    cout<< "Size of 'float' type is "<< sizeof(float)<< " bytes.\n";
-    cout<< "Size of 'double' type is "<< sizeof(double)<< " bytes.\n";
+    cout<< "///Program to Display various size(s) of Data Type(s) in your System///"<< endl<< endl<< endl;
+    cout<< "Size of 'char' Type is "<< sizeof(char)<< " byte(s).\n";
+    cout<< "Size of 'int' Type is "<< sizeof(int)<< " byte(s).\n";
+    cout<< "Size of 'float' Type is "<< sizeof(float)<< " byte(s).\n";
+    cout<< "Size of 'double' Type is "<< sizeof(double)<< " byte(s).\n";
     cout<< NEWLINE<< NEWLINE<< "Created by Jugal Kishore -- 2019"<< NEWLINE;
     return 0;
 }

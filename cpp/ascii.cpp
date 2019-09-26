@@ -7,12 +7,12 @@ using namespace std;
 int main()
 {
     int choice,a;
-    cout<< "///Program to display all the ASCII codes///"<< endl<< endl<< endl;
+    cout<< "///Program to display all the ASCII Code(s)///"<< endl<< endl<< endl;
     while(1)
     {
         cout<< "\nchoices\n";
-        cout<< "\n1. for all the ASCII Codes\n";
-        cout<< "\n2. for the ASCII Codes you can see and make sense of\n";
+        cout<< "\n1. for all the ASCII Code(s)\n";
+        cout<< "\n2. for the ASCII Code(s) you can see and make sense of\n";
         cout<< "\nAnything else and off you go!\n";
         cout<< "\nchoice: ";
         cin>> choice;

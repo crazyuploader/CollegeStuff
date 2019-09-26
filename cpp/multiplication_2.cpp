@@ -5,13 +5,13 @@ using namespace std;
 
 int main()
 {
-    int a, b;
-    cout<< "///Program to Display Greater Number///"<< endl<< endl<< endl;
+    int a,b;
+    cout<< "///Program to Display Multiplication of two Entered Number(s)///"<<endl<<endl<<endl;
     cout<< "Enter First Number: ";
     cin>> a;
     cout<< "Enter Second Number: ";
     cin>> b;
-    (a==b)?cout<< "Entered Number are Equal":(a>b)?cout<<"Greater Number is = "<<a:cout<< "Greater Number is = "<< b;
+    cout<< "Answer is "<< a*b;
     cout<< NEWLINE<< NEWLINE<< "Created by Jugal Kishore -- 2019"<< NEWLINE;
     return 0;
 }

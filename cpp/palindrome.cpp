@@ -6,24 +6,24 @@ using namespace std;
 int main()
 {
     int a,b=0,c,pal;
-    cout<< "///Program to check for Palindrome///"<< endl<< endl<< endl;
-    cout<< "Enter the Number to reverse: ";
+    cout<< "///Program to Check Whether or not Entered Number is Palindrome///"<< endl<< endl<< endl;
+    cout<< "Enter the Number: ";
     cin>> a;
     pal=a;
     while(a>0)
-    {
-        c=a%10;
-        b=b*10+c;
-        a=a/10;
-    }
+        {
+            c=a%10;
+            b=b*10+c;
+            a=a/10;
+        }
     if(pal==b)
-    {
-        cout<< "\nNumber is Palindrome";
-    }
+        {
+            cout<< "Number is Palindrome";
+        }
     else
-    {
-        cout<< "\nNumber is not Palindrome";
-    }
+        {
+            cout<< "Number is not Palindrome";
+        }
     cout<< NEWLINE<< NEWLINE<< "Created by Jugal Kishore -- 2019"<< NEWLINE;
     return 0;
 }
