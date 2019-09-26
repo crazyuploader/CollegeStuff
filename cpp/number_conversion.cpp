@@ -14,7 +14,7 @@ int main()
         r[i]=num%2;
         num=num/2;
     }
-    cout<< "\nBinary number of entered number is: ";
+    cout<< "\nBinary number of entered number is = ";
     for(j=i-1;j>=0;j--)
         {
             cout<< r[j];
