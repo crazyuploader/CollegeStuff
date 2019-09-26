@@ -6,16 +6,18 @@ using namespace std;
 
 int convertDecimalToBinary()
 {
-    int i,num,r[10],j;
+    int i,num,deci_num,r[10],j;
     cout<< "\nConverting Decimal Number to Binary Number"<< endl<< endl;
     cout<< "\nEnter Decimal Number: ";
     cin>> num;
+    deci_num=num;
     for(i=0;num>0;i++)
     {
         r[i]=num%2;
         num=num/2;
     }
-    cout<< "\nBinary number of entered number is = ";
+    cout<< "Entered Decimal Number is = "<< deci_num<< endl;
+    cout<< "Its Binary equivalent is = ";
     for(j=i-1;j>=0;j--)
         {
             cout<< r[j];
