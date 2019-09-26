@@ -27,7 +27,7 @@ int main()
                      c=a;
                      a=b;
                      b=c;
-                     cout<< "After Swapping number a is "<< a<< " and number b is "<<b;
+                     cout<< "After Swapping a is "<< a<< " and b is "<<b;
                      break;
             case 2:  cout<< "\nUsing + and -"<< endl;
                      cout<< "\nEnter number a: ";
@@ -37,7 +37,7 @@ int main()
                      a=a+b;
                      b=a-b;
                      a=a-b;
-                     cout<< "After swapping a is "<< a<< " and b is "<< b;
+                     cout<< "After Swapping a is "<< a<< " and b is "<< b;
                      break;
             case 3:  cout<< "\nUsing * and /"<< endl;
                      cout<< "\nEnter number a: ";
@@ -47,7 +47,7 @@ int main()
                      a=a*b;
                      b=a/b;
                      a=a/b;
-                     cout<< "After swapping a is "<< a<< " and b is "<< b;
+                     cout<< "After Swapping a is "<< a<< " and b is "<< b;
                      break;
             default: cout<< "Exiting...\n\n";
                      cout<< NEWLINE<< NEWLINE<< "Created by Jugal Kishore -- 2019"<< NEWLINE;
