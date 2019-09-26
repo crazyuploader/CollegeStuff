@@ -33,7 +33,7 @@ int average()
     return 0;
 }
 
-int base_pow()
+int base_exponent_power()
 {
     int base,exponent;
     long long result=1;
@@ -51,7 +51,7 @@ int base_pow()
     return 0;
 }
 
-int division()
+int division_2()
 {
     int a, b;
     cout<< "///Program to divide two numbers///"<< endl<< endl<< endl;
@@ -145,7 +145,7 @@ int greater_3()
     return 0;
 }
 
-int reverse_2()
+int reverse()
 {
     int a,b=0,c;
     cout<< "///Program to Reverse Number///"<< endl<< endl<< endl;
@@ -233,7 +233,7 @@ int table()
     return 0;
 }
 
-int multiplication()
+int multiplication_2()
 {
     int a,b;
     cout<< "///Program to Display Multiplication of two Entered Number(s)///"<<endl<<endl<<endl;
@@ -540,9 +540,9 @@ int main()
               break;
      case 2:  subtract_2();
               break;
-     case 3:  multiplication();
+     case 3:  multiplication_2();
               break;
-     case 4:  division();
+     case 4:  division_2();
               break;
      case 5:  even_odd();
               break;
@@ -552,9 +552,9 @@ int main()
               break;
      case 8:  greater_3();
               break;
-     case 9:  base_pow();
+     case 9:  base_exponent_power();
               break;
-     case 10: reverse_2();
+     case 10: reverse();
               break;
      case 11: palindrome();
               break;
