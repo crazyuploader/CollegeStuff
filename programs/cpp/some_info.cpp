@@ -24,7 +24,7 @@ int main()
             cin>> phone;
             if(phone.length()==11)
                 {
-                    cout<< "\nEntered Landline Number is OK";
+                    cout<< "\nEntered Landline Number is OK"<< endl;
                 }
             else
                 {
@@ -40,7 +40,7 @@ int main()
                 cin>> phone;
                 if(phone.length()==10)
                     {
-                        cout<< "\nEntered Mobile Phone Number is OK";
+                        cout<< "\nEntered Mobile Phone Number is OK"<< endl;
                     }
                 else
                     {
@@ -61,7 +61,7 @@ int main()
     */
     cout<< "\nEnter your Email Address: ";
     cin>> email;
-    cout<< NEWLINE<< "Your Entered Details are as follows -";
+    cout<< NEWLINE<< "Your Entered Details are as follows -"<< endl;
     cout<< "\nFull Name: "<< f_name<< " "<< l_name<< endl;
     cout<< "\nPhone Number: "<< phone<< endl;
     cout<< "\nEmail Address: "<< email;
