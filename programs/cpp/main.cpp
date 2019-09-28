@@ -594,7 +594,7 @@ int main()
    cout<< "15. for Program to Check Whether or not Entered Number is Armstrong\n";
    cout<< "16. for Program to Display Sum of its Digit(s)\n";
    cout<< "17. for Program to Swap two Entered Numbers using three way(s)\n";
-   cout<< "18. for Program to Convert Numbers\n";
+   cout<< "18. for Program to Convert Number(s)\n";
    cout<< "19. for Program to Display Sizes of various Data type(s) in your system\n";
    cout<< "20. for Program to Show all the ASCII Code(s)\n";
    cout<< "21. for Program to Show all the Factors of an Entered Number\n";
