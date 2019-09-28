@@ -55,8 +55,10 @@ int main()
             cout<< NEWLINE<< NEWLINE<< "Created by Jugal Kishore -- 2019"<< NEWLINE;
             exit(0);
         }
+    /* Not working at the moment ;)
     cout<< "\nEnter your Address: ";
     cin>> address;
+    */
     cout<< "\nEnter your Email Address: ";
     cin>> email;
     cout<< NEWLINE<< "Your Entered Details are as follows -";
