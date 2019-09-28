@@ -511,8 +511,8 @@ int some_info()
     cin>> f_name;
     cout<< "\nEnter Last Name: ";
     cin>> l_name;
-    cout<< "\nDo you have Landline or a Mobile Phone? ";
-    cout<< "\n\nPlease type 1 for Landline and 2 for Mobile Phone: ";
+    cout<< "\nLandline or Mobile Phone?";
+    cout<< "\n\n1 for Landline and 2 for Mobile Phone: ";
     cin>> temp;
     if(temp==1)
         {
