@@ -502,6 +502,74 @@ int alpha_tri()
     return 0;
 }
 
+int some_info()
+{
+    string f_name,l_name,phone,address,email;
+    int temp;
+    cout<< "///Program to Enter various Details and Display them///"<< endl<< endl<< endl;
+    cout<< "\nEnter First Name: ";
+    cin>> f_name;
+    cout<< "\nEnter Last Name: ";
+    cin>> l_name;
+    cout<< "\nLandline or Mobile Phone?";
+    cout<< "\n\n1 for Landline and 2 for Mobile Phone: ";
+    cin>> temp;
+    if(temp==1)
+        {
+            cout<< "\nEnter your Landline Number with STD code: ";
+            cin>> phone;
+            if(phone.length()==11)
+                {
+                    cout<< "\nEntered Landline Number is OK"<< endl;
+                }
+            else
+                {
+                    cout<< "Check Number and Try Again!";
+                    cout<< TAB<< " =================================\n";
+                    cout<< TAB<< "||Created by Jugal Kishore -- 2019||"<< NEWLINE;
+                    cout<< TAB<< " =================================\n";
+                    exit(0);
+                }
+        }
+    else
+        if(temp==2)
+            {
+                cout<< "\nEnter your Mobile Phone Number: ";
+                cin>> phone;
+                if(phone.length()==10)
+                    {
+                        cout<< "\nEntered Mobile Phone Number is OK"<< endl;
+                    }
+                else
+                    {
+                        cout<< "Check Number and Try Again!";
+                        cout<< TAB<< " =================================\n";
+                        cout<< TAB<< "||Created by Jugal Kishore -- 2019||"<< NEWLINE;
+                        cout<< TAB<< " =================================\n";
+                        exit(0);
+                    }
+            }
+        else
+        {
+            cout<< "\nYou haven't pressed 1 or 2, have you?\n\nExiting!";
+            cout<< TAB<< " =================================\n";
+            cout<< TAB<< "||Created by Jugal Kishore -- 2019||"<< NEWLINE;
+            cout<< TAB<< " =================================\n";
+            exit(0);
+        }
+    /* Not working at the moment ;)
+    cout<< "\nEnter your Address: ";
+    cin>> address;
+    */
+    cout<< "\nEnter your Email Address: ";
+    cin>> email;
+    cout<< NEWLINE<< "Your Entered Details are as follows -";
+    cout<< "\nFull Name: "<< f_name<< " "<< l_name<< endl;
+    cout<< "\nPhone Number: "<< phone<< endl;
+    cout<< "\nEmail Address: "<< email;
+    return 0;
+}
+
 int main()
 {
  int choice;
@@ -531,6 +599,7 @@ int main()
    cout<< "20. for Program to Show all the ASCII Code(s)\n";
    cout<< "21. for Program to Show all the Factors of an Entered Number\n";
    cout<< "22. for Program to Display Alphabet Triangle\n";
+   cout<< "23. for Program to Displaying Entered Details using String\n";
    cout<< "Anything else to exit!\n";
    cout<< "\nchoice: ";
    cin>> choice;
@@ -579,6 +648,8 @@ int main()
      case 21: factors_of_numbers();
               break;
      case 22: alpha_tri();
+              break;
+     case 23: some_info();
               break;
      default: cout<< "Exiting...\n\n";
               cout<< TAB<< " =================================\n";
