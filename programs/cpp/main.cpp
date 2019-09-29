@@ -551,7 +551,7 @@ int some_info()
             }
         else
         {
-            cout<< "\nYou haven't pressed 1 or 2, have you?\n\nExiting!";
+            cout<< "\nUh-huh! You haven't pressed 1 or 2, have you?\n\nExiting!";
             cout<< TAB<< " =================================\n";
             cout<< TAB<< "||Created by Jugal Kishore -- 2019||"<< NEWLINE;
             cout<< TAB<< " =================================\n";
