@@ -51,7 +51,7 @@ int main()
             }
         else
         {
-            cout<< "\nYou haven't pressed 1 or 2, have you?\n\nExiting!";
+            cout<< "\nUh-huh! You haven't pressed 1 or 2, have you?\n\nExiting!";
             cout<< NEWLINE<< NEWLINE<< "Created by Jugal Kishore -- 2019"<< NEWLINE;
             exit(0);
         }
