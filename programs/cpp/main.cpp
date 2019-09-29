@@ -570,6 +570,55 @@ int some_info()
     return 0;
 }
 
+int calc()
+{
+    int a,b,result;
+    char option;
+    cout<< "///A Simple Calculator///"<< endl<< endl<< endl;
+    cout<< "\nEnter First Number: ";
+    cin>> a;
+    cout<< "\nEnter Second Number: ";
+    cin>> b;
+    cout<< "Options:\n";
+    cout<< "+ for Addition\n";
+    cout<< "- for Subtraction\n";
+    cout<< "* for Multiplication\n";
+    cout<< "/ for Division\n";
+    cout<< "choice: ";
+    cin>> option;
+    if(option=='+')
+        {
+            cout<< "\nAddition of "<< a<< " and "<< b<< " is "<< a+b;
+        }
+    else
+        {
+            if(option=='-')
+                {
+                    cout<< "\nDifference of "<< a<< " and "<< b<< " is "<< a-b;
+                }
+            else
+                {
+                    if(option=='*')
+                        {
+                            cout<< "\nMultiplication of "<< a<< " and "<< b<< " is "<< a*b;
+                        }
+                    else
+                        {
+                            if(option=='/')
+                                {
+                                    cout<< "\nDivision of "<< a<< " and "<< b<< " is "<< a/b;
+                                }
+                            else
+                                {
+                                    cout<< "\nUh-huh! You haven't entered the right option, have you?\n\nExiting!";
+                                }
+                        }
+
+                }
+        }
+    return 0;
+}
+
 int main()
 {
  int choice;
@@ -600,6 +649,7 @@ int main()
    cout<< "21. for Program to Show all the Factors of an Entered Number\n";
    cout<< "22. for Program to Display Alphabet Triangle\n";
    cout<< "23. for Program to Displaying Entered Details using String\n";
+   cout<< "24. for Program to Do basic calculations\n";
    cout<< "Anything else to exit!\n";
    cout<< "\nchoice: ";
    cin>> choice;
@@ -650,6 +700,8 @@ int main()
      case 22: alpha_tri();
               break;
      case 23: some_info();
+              break;
+     case 24: calc();
               break;
      default: cout<< "Exiting...\n\n";
               cout<< TAB<< " =================================\n";
