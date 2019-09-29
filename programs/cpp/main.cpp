@@ -611,6 +611,10 @@ int calc()
                             else
                                 {
                                     cout<< "\nUh-huh! You haven't entered the right option, have you?\n\nExiting!";
+                                    cout<< TAB<< " =================================\n";
+                                    cout<< TAB<< "||Created by Jugal Kishore -- 2019||"<< NEWLINE;
+                                    cout<< TAB<< " =================================\n";
+                                    exit(0);
                                 }
                         }
 
