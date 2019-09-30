@@ -20,6 +20,7 @@ int main()
         cout<< "- for Subtraction\n";
         cout<< "* for Multiplication\n";
         cout<< "/ for Division\n";
+        cout<< "% for Modulus\n";
         cout<< "And anything else to exit!\n";
         cout<< "choice: ";
         cin>> option;
@@ -33,6 +34,7 @@ int main()
                       break;
             case '/': cout<< "\nDivision of "<< a<< " and "<< b<< " is "<< a/b<< endl;
                       break;
+            case '%': cout<< "\nModulus of "<< a<< " and "<< b<< " is "<< a%b<< endl;
             default:  cout<< "\nUh-huh! You haven't entered the right option, have you?\n\nExiting!";
                       cout<< NEWLINE<< NEWLINE<< "Created by Jugal Kishore -- 2019"<< NEWLINE;
                       exit(0);
