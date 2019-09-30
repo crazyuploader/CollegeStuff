@@ -72,3 +72,7 @@ Just a collection of my C++ Programs
 
 <b>some_info.cpp</b>
 * Program to Displaying Entered Details using String
+
+<b>calc.cpp</b>
+* A simple program to do basic mathematical operations.
+* Accepts Addition, Subtraction, Multiplication, Division.
