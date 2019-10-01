@@ -1,7 +1,6 @@
 #include<iostream>
 #include<string>
 #include<cstdlib>
-
 using namespace std;
 #define TAB '\t'
 #define NEWLINE '\n'

@@ -598,10 +598,33 @@ int calc()
                       break;
             case '*': cout<< "\nMultiplication of "<< a<< " and "<< b<< " is = "<< a*b<< endl;
                       break;
-            case '/': cout<< "\nDivision of "<< a<< " and "<< b<< " is = "<< a/b<< "\n\nRemainder is = "<< a%b<< endl;
+            case '/': if(b==0)
+                      {
+                          cout << "\nYou can't divide "<< a<< " by 0!";
+                          cout<< TAB<< " =================================\n";
+                          cout<< TAB<< "||Created by Jugal Kishore -- 2019||"<< NEWLINE;
+                          cout<< TAB<< " =================================\n";
+                          exit(0);
+                      }
+                      else
+                      {
+                          cout<< "\nDivision of "<< a<< " and "<< b<< " is = "<< a/b<< endl;
+                      }
                       break;
-            case '%': cout<< "\nModulus of "<< a<< " and "<< b<< " is = "<< a%b<< endl;
-            default:  cout<< "\nUh-huh! You haven't entered the right option, have you?\n\nExiting!"<< endl<< endl;
+            case '%': if(b==0)
+                      {
+                          cout<< "\nYou can't divide "<< a<< " by 0!";
+                          cout<< TAB<< " =================================\n";
+                          cout<< TAB<< "||Created by Jugal Kishore -- 2019||"<< NEWLINE;
+                          cout<< TAB<< " =================================\n";
+                          exit(0);
+                      }
+                      else
+                      {
+                          cout<< "\nModulus of "<< a<< " and "<< b<< " is = "<< a%b<< endl;
+                      }
+                      break;
+            default:  cout<< "\nUh-huh! You haven't entered the right option, have you?\n\nExiting!";
                       cout<< TAB<< " =================================\n";
                       cout<< TAB<< "||Created by Jugal Kishore -- 2019||"<< NEWLINE;
                       cout<< TAB<< " =================================\n";
