@@ -606,10 +606,7 @@ int calc()
                           cout<< TAB<< " =================================\n";
                           exit(0);
                       }
-                      else
-                      {
-                          cout<< "\nDivision of "<< a<< " and "<< b<< " is = "<< a/b<< endl;
-                      }
+                      cout<< "\nDivision of "<< a<< " and "<< b<< " is = "<< a/b<< endl;
                       break;
             case '%': if(b==0)
                       {
@@ -619,10 +616,7 @@ int calc()
                           cout<< TAB<< " =================================\n";
                           exit(0);
                       }
-                      else
-                      {
-                          cout<< "\nModulus of "<< a<< " and "<< b<< " is = "<< a%b<< endl;
-                      }
+                      cout<< "\nModulus of "<< a<< " and "<< b<< " is = "<< a%b<< endl;
                       break;
             default:  cout<< "\nUh-huh! You haven't entered the right option, have you?\n\nExiting!";
                       cout<< TAB<< " =================================\n";
