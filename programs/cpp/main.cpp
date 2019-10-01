@@ -618,7 +618,7 @@ int calc()
                       }
                       cout<< "\nModulus of "<< a<< " and "<< b<< " is = "<< a%b<< endl;
                       break;
-            default:  cout<< "\nUh-huh! You haven't entered the right option, have you?\n\nExiting!";
+            default:  cout<< "\nUh-huh! You haven't entered the right option, have you?\n\nExiting\n!";
                       cout<< TAB<< " =================================\n";
                       cout<< TAB<< "||Created by Jugal Kishore -- 2019||"<< NEWLINE;
                       cout<< TAB<< " =================================\n";
@@ -627,6 +627,101 @@ int calc()
             }
     }
     return 0;
+}
+
+class calculator{
+    int a,b,result;
+
+    public:
+           void addition()
+           {
+               result = a+b;
+           }
+           void subtraction()
+           {
+               result = a-b;
+           }
+           void multiplication()
+           {
+               result = a*b;
+           }
+           void quotient()
+           {
+               if(b==0)
+               {
+                   cout<< "\nYou can't divide "<< a<< " by 0!\n";
+                   cout<< NEWLINE<< NEWLINE<< "Created by Jugal Kishore -- 2019"<< NEWLINE;
+                   exit(0);
+               }
+               result = a/b;
+           }
+           void remainder()
+           {
+               if(b==0)
+               {
+                   cout<< "\nYou can't divde "<< b<< " by 0!\n";
+                   cout<< NEWLINE<< NEWLINE<< "Created by Jugal Kishore -- 2019"<< NEWLINE;
+                   exit(0);
+               }
+               result = a%b;
+           }
+           void output()
+           {
+               cout<< "Result is = "<< result<< endl;
+           }
+           void intput()
+           {
+               cout<< "Enter 2 Numbers!\n";
+               cout<< "a: ";
+               cin>> a;
+               cout<< "b: ";
+               cin>> b;
+           }
+};
+
+int calc_class()
+{
+    calculator c;
+    char choice;
+    while(1)
+    {
+        cout<< "Options:\n";
+        cout<< "+ for Addition\n";
+        cout<< "- for Subtraction\n";
+        cout<< "* for Multiplication\n";
+        cout<< "/ for Division\n";
+        cout<< "% for Modulus\n";
+        cout<< "Your Choice? ";
+        cin>> choice;
+        switch(choice)
+        {
+            case '+': c.intput();
+                      c.addition();
+                      c.output();
+                      break;
+            case '-': c.intput();
+                      c.subtraction();
+                      c.output();
+                      break;
+            case '*': c.intput();
+                      c.multiplication();
+                      c.output();
+                      break;
+            case '/': c.intput();
+                      c.quotient();
+                      c.output();
+                      break;
+            case '%': c.intput();
+                      c.remainder();
+                      c.output();
+                      break;
+            default:  cout<< "Exiting!\n";
+                      cout<< TAB<< " =================================\n";
+                      cout<< TAB<< "||Created by Jugal Kishore -- 2019||"<< NEWLINE;
+                      cout<< TAB<< " =================================\n";
+                      exit(0);
+        }
+    }
 }
 
 int main()
@@ -659,7 +754,8 @@ int main()
    cout<< "21. for Program to Show all the Factors of an Entered Number\n";
    cout<< "22. for Program to Display Alphabet Triangle\n";
    cout<< "23. for Program to Displaying Entered Details using String\n";
-   cout<< "24. for Program to Do basic calculations\n";
+   cout<< "24. for Program to Do Basic Calculations\n";
+   cout<< "25. for Program to Do Basic Calculations using Class and object\n";
    cout<< "Anything else to exit!\n";
    cout<< "\nchoice: ";
    cin>> choice;
@@ -712,6 +808,8 @@ int main()
      case 23: some_info();
               break;
      case 24: calc();
+              break;
+     case 25: calc_class();
               break;
      default: cout<< "Exiting...\n\n";
               cout<< TAB<< " =================================\n";
