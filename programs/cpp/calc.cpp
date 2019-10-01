@@ -26,15 +26,15 @@ int main()
         cin>> option;
         switch(option)
         {
-            case '+': cout<< "\nAddition of "<< a<< " and "<< b<< " is "<< a+b<< endl;
+            case '+': cout<< "\nAddition of "<< a<< " and "<< b<< " is = "<< a+b<< endl;
                       break;
-            case '-': cout<< "\nDifference of "<< a<< " and "<< b<< " is "<< a-b<< endl;
+            case '-': cout<< "\nDifference of "<< a<< " and "<< b<< " is = "<< a-b<< endl;
                       break;
-            case '*': cout<< "\nMultiplication of "<< a<< " and "<< b<< " is "<< a*b<< endl;
+            case '*': cout<< "\nMultiplication of "<< a<< " and "<< b<< " is = "<< a*b<< endl;
                       break;
-            case '/': cout<< "\nDivision of "<< a<< " and "<< b<< " is "<< a/b<< endl;
+            case '/': cout<< "\nDivision of "<< a<< " and "<< b<< " is = "<< a/b<< "\n\nRemainder is = "<< a%b<< endl;
                       break;
-            case '%': cout<< "\nModulus of "<< a<< " and "<< b<< " is "<< a%b<< endl;
+            case '%': cout<< "\nModulus of "<< a<< " and "<< b<< " is = "<< a%b<< endl;
             default:  cout<< "\nUh-huh! You haven't entered the right option, have you?\n\nExiting!";
                       cout<< NEWLINE<< NEWLINE<< "Created by Jugal Kishore -- 2019"<< NEWLINE;
                       exit(0);
