@@ -6,13 +6,15 @@ using namespace std;
 int main()
 {
     char ch;
-    int i,j,k,m;
+    int i,j,k,m,n;
     cout<< "///Program to display Alphabet Triangle///"<< endl<< endl<< endl;
     cout<< "Enter any Character: ";
     cin>> ch;
-    for(i=1;i<=5;i++)
+    cout<< "Enter Size: ";
+    cin>> n;
+    for(i=1;i<=n;i++)
     {
-        for(j=5;j>=i;j--)
+        for(j=n;j>=i;j--)
             cout<< " ";
         for(k=1;k<=i;k++)
             cout<<ch++;
@@ -20,7 +22,6 @@ int main()
         for(m=1;m<i;m++)
             cout<< --ch;
         cout<< "\n";
-        ch;
     }
     cout<< NEWLINE<< NEWLINE<< "Created by Jugal Kishore -- 2019"<< NEWLINE;
     return 0;
