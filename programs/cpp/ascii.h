@@ -20,18 +20,18 @@ int ascii()
         {
             case 1:  a=0;
                      while(a!=127)
-                         {
-                             cout<< "\nASCII Code for "<< a<< " is "<< char(a);
-                             a++;
-                         }
+                     {
+                         cout<< "\nASCII Code for "<< a<< " is "<< char(a);
+                         a++;
+                     }
                      cout<< endl;
                      break;
             case 2:  a=32;
                      while(a!=127)
-                         {
-                             cout<< "\nASCII Code for "<< a<< " is "<< char(a);
-                             a++;
-                         }
+                     {
+                         cout<< "\nASCII Code for "<< a<< " is "<< char(a);
+                         a++;
+                     }
                      cout<< endl;
                      break;
             default: cout<< "Exiting...\n\n";

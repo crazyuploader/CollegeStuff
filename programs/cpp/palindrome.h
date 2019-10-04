@@ -11,19 +11,19 @@ int palindrome()
     cin>> a;
     pal=a;
     while(a>0)
-        {
-            c=a%10;
-            b=b*10+c;
-            a=a/10;
-        }
+    {
+        c=a%10;
+        b=b*10+c;
+        a=a/10;
+    }
     if(pal==b)
-        {
-            cout<< "Number is Palindrome";
-        }
+    {
+        cout<< "Number is Palindrome";
+    }
     else
-        {
-            cout<< "Number is not Palindrome";
-        }
+    {
+        cout<< "Number is not Palindrome";
+    }
     cout<< NEWLINE<< NEWLINE<< "Created by Jugal Kishore -- 2019"<< NEWLINE;
     return 0;
 }

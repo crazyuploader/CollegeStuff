@@ -10,11 +10,11 @@ int reverse()
     cout<< "Enter the Number to Reverse: ";
     cin>> a;
     while(a>0)
-        {
-            c=a%10;
-            b=b*10+c;
-            a=a/10;
-        }
+    {
+        c=a%10;
+        b=b*10+c;
+        a=a/10;
+    }
     cout<< "Revered Number is = "<< b;
     cout<< NEWLINE<< NEWLINE<< "Created by Jugal Kishore -- 2019"<< NEWLINE;
     return 0;

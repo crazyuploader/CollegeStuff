@@ -18,42 +18,44 @@ int some_info()
     cout<< "\n\n1 for Landline and 2 for Mobile Phone: ";
     cin>> temp;
     if(temp==1)
+    {
+        cout<< "\nEnter your Landline Number with STD code: ";
+        cin>> phone;
+        if(phone.length()==11)
         {
-            cout<< "\nEnter your Landline Number with STD code: ";
-            cin>> phone;
-            if(phone.length()==11)
-                {
-                    cout<< "\nEntered Landline Number is OK"<< endl;
-                }
-            else
-                {
-                    cout<< "Check Number and Try Again!";
-                    cout<< NEWLINE<< NEWLINE<< "Created by Jugal Kishore -- 2019"<< NEWLINE;
-                    exit(0);
-                }
+            cout<< "\nEntered Landline Number is OK"<< endl;
         }
+        else
+        {
+            cout<< "Check Number and Try Again!";
+            cout<< NEWLINE<< NEWLINE<< "Created by Jugal Kishore -- 2019"<< NEWLINE;
+            exit(0);
+        }
+    }
     else
+    {
         if(temp==2)
+        {
+            cout<< "\nEnter your Mobile Phone Number: ";
+            cin>> phone;
+            if(phone.length()==10)
             {
-                cout<< "\nEnter your Mobile Phone Number: ";
-                cin>> phone;
-                if(phone.length()==10)
-                    {
-                        cout<< "\nEntered Mobile Phone Number is OK"<< endl;
-                    }
-                else
-                    {
-                        cout<< "Check Number and Try Again!";
-                        cout<< NEWLINE<< NEWLINE<< "Created by Jugal Kishore -- 2019"<< NEWLINE;
-                        exit(0);
-                    }
+                cout<< "\nEntered Mobile Phone Number is OK"<< endl;
             }
+            else
+            {
+                cout<< "Check Number and Try Again!";
+                cout<< NEWLINE<< NEWLINE<< "Created by Jugal Kishore -- 2019"<< NEWLINE;
+                exit(0);
+            }
+        }
         else
         {
             cout<< "\nUh-huh! You haven't pressed 1 or 2, have you?\n\nExiting!";
             cout<< NEWLINE<< NEWLINE<< "Created by Jugal Kishore -- 2019"<< NEWLINE;
             exit(0);
         }
+    }
     cout<< "\nEnter your Address: ";
     cin.ignore();
     getline(cin,address);

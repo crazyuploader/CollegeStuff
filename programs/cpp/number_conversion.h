@@ -19,9 +19,9 @@ int convertDecimalToBinary()
     cout<< "Entered Decimal Number is = "<< deci_num<< endl;
     cout<< "Its Binary equivalent is = ";
     for(j=i-1;j>=0;j--)
-        {
-            cout<< r[j];
-        }
+    {
+        cout<< r[j];
+    }
     return 0;
 }
 
