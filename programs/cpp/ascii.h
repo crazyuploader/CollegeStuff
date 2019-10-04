@@ -4,7 +4,7 @@ using namespace std;
 #define TAB '\t'
 #define NEWLINE '\n'
 
-int main()
+int ascii()
 {
     int choice,a;
     cout<< "///Program to display all the ASCII Code(s)///"<< endl<< endl<< endl;

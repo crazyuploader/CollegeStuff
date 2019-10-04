@@ -3,7 +3,7 @@ using namespace std;
 #define NEWLINE '\n'
 #define TAB '\t'
 
-int main()
+int multiplication_2()
 {
     int a,b;
     cout<< "///Program to Display Multiplication of two Entered Number(s)///"<<endl<<endl<<endl;

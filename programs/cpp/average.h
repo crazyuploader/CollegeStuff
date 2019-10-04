@@ -3,7 +3,7 @@ using namespace std;
 #define NEWLINE '\n'
 #define TAB '\t'
 
-int main()
+int average()
 {
     int a[20], i, n;
     float avg = 0;

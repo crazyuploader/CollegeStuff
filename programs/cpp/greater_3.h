@@ -3,7 +3,7 @@ using namespace std;
 #define NEWLINE '\n'
 #define TAB '\t'
 
-int main ()
+int greater_3()
 {
     int a,b,c;
     cout<< "///Program to Display Greatest Number among 3 Number(s)///"<< endl<< endl<< endl;

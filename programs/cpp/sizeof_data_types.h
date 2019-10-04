@@ -3,7 +3,7 @@ using namespace std;
 #define TAB '\t'
 #define NEWLINE '\n'
 
-int main()
+int sizeof_data_types()
 {
     cout<< "///Program to Display various size(s) of Data Type(s) in your System///"<< endl<< endl<< endl;
     cout<< "Size of 'char' Type is "<< sizeof(char)<< " byte(s).\n";

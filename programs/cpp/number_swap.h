@@ -4,7 +4,7 @@ using namespace std;
 #define TAB '\t'
 #define NEWLINE '\n'
 
-int main()
+int number_swap()
 {
     int choice,a,b,c;
     cout<< "///Program to Swapping of two Entered Numbers///"<< endl<< endl<< endl;

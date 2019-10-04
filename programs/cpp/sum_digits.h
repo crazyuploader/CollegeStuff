@@ -3,7 +3,7 @@ using namespace std;
 #define TAB '\t'
 #define NEWLINE '\n'
 
-int main()
+int sum_digits()
 {
     int num,sum=0,r,temp;
     cout<< "///Program to Display Sum of its Digit(s)///"<< endl<< endl<< endl;

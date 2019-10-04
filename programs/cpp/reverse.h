@@ -3,7 +3,7 @@ using namespace std;
 #define NEWLINE '\n'
 #define TAB '\t'
 
-int main()
+int reverse()
 {
     int a,b=0,c;
     cout<< "///Program to Reverse Number///"<< endl<< endl<< endl;

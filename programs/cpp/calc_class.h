@@ -54,7 +54,7 @@ class calculator{
            }
 };
 
-int main()
+int calc_class()
 {
     calculator c;
     char choice;

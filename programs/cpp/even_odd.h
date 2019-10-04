@@ -3,7 +3,7 @@ using namespace std;
 #define TAB '\t'
 #define NEWLINE '\n'
 
-int main()
+int even_odd()
 {
     int a;
     cout<< "///Program to Display Whether or not Entered Number is Even or Odd///"<< endl<< endl<< endl;

@@ -3,7 +3,7 @@ using namespace std;
 #define TAB '\t'
 #define NEWLINE '\n'
 
-int main()
+int factors_of_numbers()
 {
     int a,i;
     cout<< "///Program to Display all the Factors an Entered Number///"<< endl<< endl<< endl;

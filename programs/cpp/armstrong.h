@@ -3,7 +3,7 @@ using namespace std;
 #define TAB '\t'
 #define NEWLINE '\n'
 
-int main()
+int armstrong()
 {
     int num,i,r,temp,sum=0;
     cout<< "///Program to Check Whether or not Entered Number is Armstrong///"<< endl<< endl<< endl;

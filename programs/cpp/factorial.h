@@ -3,7 +3,7 @@ using namespace std;
 #define NEWLINE '\n'
 #define TAB '\t'
 
-int main()
+int factorial()
 {
     int n,i,fac=1;
     cout<< "///Program to Display Factorial of an Entered Number///"<< endl<< endl<< endl;

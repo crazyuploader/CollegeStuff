@@ -3,7 +3,7 @@ using namespace std;
 #define NEWLINE '\n'
 #define TAB '\t'
 
-int main()
+int palindrome()
 {
     int a,b=0,c,pal;
     cout<< "///Program to Check Whether or not Entered Number is Palindrome///"<< endl<< endl<< endl;

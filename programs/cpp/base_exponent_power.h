@@ -3,7 +3,7 @@ using namespace std;
 #define NEWLINE '\n'
 #define TAB '\t'
 
-int main()
+int base_exponent_power()
 {
     int base,exponent;
     long long result=1;

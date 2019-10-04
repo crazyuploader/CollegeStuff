@@ -3,7 +3,7 @@ using namespace std;
 #define NEWLINE '\n'
 #define TAB '\t'
 
-int main()
+int prime()
 {
     int n,i,m=0;
     cout<< "///Program to Check Prime Number///"<< endl<< endl<< endl;

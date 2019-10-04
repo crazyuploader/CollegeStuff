@@ -3,7 +3,7 @@ using namespace std;
 #define TAB '\t'
 #define NEWLINE '\n'
 
-int main()
+int alpha_tri()
 {
     char ch;
     int i,j,k,m,n;

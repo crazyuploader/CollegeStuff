@@ -4,7 +4,7 @@ using namespace std;
 #define NEWLINE '\n'
 #define TAB '\t'
 
-int main()
+int calc()
 {
     int a,b,result;
     char option;

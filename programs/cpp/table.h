@@ -3,7 +3,7 @@ using namespace std;
 #define NEWLINE '\n'
 #define TAB '\t'
 
-int main()
+int table()
 {
     int a,i;
     cout<< "///Program to Display Table of Entered Number///"<<endl<<endl<<endl;

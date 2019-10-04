@@ -16,7 +16,7 @@ T Large_3(T x, T y, T z)
     return (x>y)?((x>z)?x:z):((y>z)?y:z);
 }
 
-int main()
+int greater_template()
 {
     int choice;
     cout<< "///Program to Display Greater Number using Template///"<< endl<< endl<< endl;

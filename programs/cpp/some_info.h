@@ -5,7 +5,7 @@ using namespace std;
 #define TAB '\t'
 #define NEWLINE '\n'
 
-int main()
+int some_info()
 {
     string f_name,l_name,phone,address,email;
     int temp;

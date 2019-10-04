@@ -3,7 +3,7 @@ using namespace std;
 #define NEWLINE '\n'
 #define TAB '\t'
 
-int main()
+int division_2()
 {
     int a, b;
     cout<< "///Program to divide two numbers///"<< endl<< endl<< endl;

@@ -45,7 +45,7 @@ int convertBinaryToDecimal()
     return 0;
 }
 
-int main()
+int number_conversion()
 {
     long long n;
     int choice;
