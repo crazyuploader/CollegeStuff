@@ -111,12 +111,12 @@ void main()
     while(1)
     {
         printf("\n\nChoose an option from the following list\n");
-        printf("\n========================================\n");
-        printf("\n1. Insert a Node at beginning\n");
-        printf("\n2. Insert a Node at last\n");
-        printf("\n3. Insert a Node after specified location\n");
-        printf("\n4. Display the values of every node\n");
-        printf("\nAnything else to exit!\n");
+        printf("========================================\n");
+        printf("1: Insert a Node at beginning\n");
+        printf("2: Insert a Node at last\n");
+        printf("3: Insert a Node after specified location\n");
+        printf("4: Display the values of every node\n");
+        printf("Anything else to exit!\n");
         printf("\nchoice: ");
         scanf("%d",&choice);
         switch(choice)
