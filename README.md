@@ -2,7 +2,7 @@ Hey there! Welcome to my <b>GitHub</b> 'CollegeStuff' repository, where you can 
 ---
 Currently I have –
 
-* <b>C++</b>
-* <b>C</b>
+* <b>[C++](https://github.com/crazyuploader/CollegeStuff/tree/master/programs/cpp)</b>
+* <b>[C](https://github.com/crazyuploader/CollegeStuff/tree/master/programs/c)</b>
 
 [![Build Status](https://travis-ci.org/crazyuploader/CollegeStuff.svg?branch=master)](https://travis-ci.org/crazyuploader/CollegeStuff)
