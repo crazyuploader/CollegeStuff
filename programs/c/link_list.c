@@ -69,7 +69,7 @@ void viewNode()
         t=START;
         while(t!=NULL)
         {
-        printf("Node Address is = %d and its value is = ",t,t->data);
+        printf("\nNode Address is = %d and its value is = %d",t,t->data);
         t=t->link;
         }
     }
@@ -107,6 +107,7 @@ void deleteLocation()
         printf("Invalid Location");
     }
     else
+    {
         if(loc==1)
         {
             t=START;
@@ -126,15 +127,16 @@ void deleteLocation()
             q->link=NULL;
             free(q);
         }
+    }
 }
 
 void main()
 {
     int choice;
+    printf("///Linked-List Program///");
     while(1)
     {
-        printf("///Linked-List Program///\n");
-        printf("\n 1: Insert a Node");
+        printf("\n\n 1: Insert a Node");
         printf("\n 2: Delete a Node");
         printf("\n 3: View every Node");
         printf("\n 4: Delete Node at a particular location");
