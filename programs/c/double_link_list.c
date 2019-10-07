@@ -3,13 +3,12 @@
 
 struct node
 {
-  int data;
-  struct node *left; //Pointer to left node
-  struct node *right; //Pointer to Right node
+    int data;
+    struct node *left; //Pointer to left node
+    struct node *right; //Pointer to Right node
 };
 
 struct node *START;
-
 struct node *createnode()
 {
     struct node *n;
@@ -128,7 +127,7 @@ void main()
                      break;
             case 3:  insert_specified();
                      break;
-            case 4: display();
+            case 4:  display();
                      break;
             default: printf("Exiting...\n\n");
                      printf("\t =================================\n");

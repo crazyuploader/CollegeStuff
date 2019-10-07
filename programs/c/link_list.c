@@ -153,7 +153,11 @@ void main()
                      break;
             case 4:  deleteLocation();
                      break;
-            case 5:  exit(0);
+            case 5:  printf("Exiting...\n\n");
+                     printf("\t =================================\n");
+                     printf("\t||Created by Jugal Kishore -- 2019||\n");
+                     printf("\t =================================\n");
+                     exit(0);
                      break;
             default: printf("Invalid Choice entered.");
         }
