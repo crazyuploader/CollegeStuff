@@ -1,9 +1,8 @@
-language: 
+language:
 - c
 - cpp
 compiler: g++
-script: 
+script:
 - for f in $(ls programs/cpp/*.cpp); do echo "Compiling $f"; g++ $f; done
 - for f in $(ls programs/c/*.c); do echo "Compiling $f"; g++ $f; done
-
-
+- for f in $(ls programs/c/DataStructure/*.c); do echo "Compiling $f"; g++ $f; done
