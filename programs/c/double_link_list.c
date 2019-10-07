@@ -4,7 +4,7 @@
 struct node
 {
     int data;
-    struct node *left; //Pointer to left node
+    struct node *left;  //Pointer to left node
     struct node *right; //Pointer to Right node
 };
 
@@ -107,7 +107,7 @@ void display()
 void main()
 {
     int choice;
-    printf("///Program for Double Linked-List///\n");
+    printf("///Program for Double Linked-List///");
     while(1)
     {
         printf("\n\nChoose an option from the following list\n");
