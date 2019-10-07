@@ -1,6 +1,7 @@
 Hey there! Welcome to my <b>GitHub</b> 'CollegeStuff' repository, where you can find all the programming languages I work on.
-Currently I have –
 ---
+Currently I have –
+
 * <b>C++</b>
 * <b>C</b>
 
