@@ -1,3 +1,9 @@
-language: cpp
+language: 
+- c
+- cpp
 compiler: g++
-script: for f in $(ls *.cpp); do echo "Compiling $f"; g++ $f; done
+script: 
+- for f in $(ls programs/cpp/*.cpp); do echo "Compiling $f"; g++ $f; done
+- for f in $(ls programs/c/*.c); do echo "Compiling $f"; g++ $f; done
+
+
