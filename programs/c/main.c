@@ -3,6 +3,7 @@
 #include"DataStructure/link_list.h"
 #include"DataStructure/double_link_list.h"
 #include"footer.h"
+#include"array.h"
 
 int main()
 {
@@ -14,6 +15,7 @@ int main()
         printf("Data Structure Programs -\n\n");
         printf("1. for Linked-List Program\n");
         printf("2. for Double Linked-List Program\n");
+        printf("3. for Array Program\n");
         printf("Anything else to exit!\n");
         printf("\nchoice: ");
         scanf("%d",&choice);
@@ -22,6 +24,8 @@ int main()
             case 1:  link_list();
                      break;
             case 2:  double_link_list();
+                     break;
+            case 3:  array();
                      break;
             default: printf("Exiting...\n");
                      footer();
