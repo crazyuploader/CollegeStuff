@@ -1,4 +1,4 @@
-Hey there! Welcome to my <b>GitHub</b> 'CollegeStuff' repository, where you can find all the programming languages I work on.
+Hey there! Welcome to my GitHub 'CollegeStuff' repository, where you can find all the programming languages I work on.
 ---
 Currently I have –
 
