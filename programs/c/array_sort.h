@@ -1,10 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int array()
+int array_sort()
 {
-    int array[30],i,n;
-    printf("///Program for Array///\n\n\n");
+    printf("///Program for Sorting Array///\n\n\n");
+    int array[10],i,j,n,temp;
     printf("Enter the value of N: ");
     scanf("%d",&n);
     printf("Enter %d Number(s) in Array: \n",n);
@@ -17,11 +17,20 @@ int array()
     {
         printf(" %d",array[i]);
     }
-    printf("\nEnter the position you want to enter a Number at: ");
-    scanf("%d",&i);
-    printf("Enter new value at position %d: ",i);
-    scanf("%d",&array[i-1]);
-    printf("Array after Entering new value at %d is:",i);
+    //Sorting Entered Array now
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<(n-i-1);j++)
+        {
+            if(array[j]>array[j+1])
+            {
+                temp=array[j];
+                array[j]=array[j+1];
+                array[j+1]=temp;
+            }
+        }
+    }
+    printf("\nSorted Array is:");
     for(i=0;i<n;i++)
     {
         printf(" %d",array[i]);
