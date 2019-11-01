@@ -7,7 +7,7 @@ int average()
 {
     int a[20], i, n;
     float avg = 0;
-    cout<< "///Program to Display Average of Entered n Numbers///"<< endl<< endl<< endl;
+    cout<< "///Program to Display Average of Entered n Number(s)///"<< endl<< endl<< endl;
     cout<< "Enter Number of Numbers you want to get Average of: ";
     cin>> n;
     for(i=1;i<=n;i++)
