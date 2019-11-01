@@ -9,3 +9,10 @@ Practical File for C++
 
 <b>[`second.cpp`](/Practical_File/second.cpp)</b>
 * Creating a **Class** and accessing its members using an **Object**.
+
+<b>[`third.cpp`](/Practical_File/third.cpp)</b>
+* Creating two different types of **Constructors**.
+* Creating a **Destructor**.
+
+<b>[`fourth.cpp`](/Practical_File/fourth.cpp)</b>
+* Creating a **Copy Constructor**.
