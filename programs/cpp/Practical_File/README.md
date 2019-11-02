@@ -21,3 +21,4 @@ Practical File for C++
 * Program to show **Constructor Overloading**.
 
 <b>[`sixth.cpp`](/Practical_File/sixth.cpp)</b>
+* Creating two **Access Specifiers**: `public` and `private`.
