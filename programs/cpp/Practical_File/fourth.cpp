@@ -37,6 +37,6 @@ int main()
     cout<< "Book Title: "<< bookcopy.title<< endl;
     cout<< "Book Author: "<< bookcopy.author<< endl;
     cout<< "Book Pages: "<< bookcopy.pages<< endl;
-    cout<< "\nCreated by Jugal Kishore -- 2019\n";
+    cout<< "\nCreated by Jugal Kishore -- 2019\n\n";
     return 0;
 }
