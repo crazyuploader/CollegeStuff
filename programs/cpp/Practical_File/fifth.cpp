@@ -26,6 +26,6 @@ int main()
     Area A1;
     cout<< "\nSecond Constructor with an argument\n\n";
     Area A2(10);
-    cout<< "\nCreated by Jugal Kishore -- 2019\n\n";
+    cout<< "\nCreated by Jugal Kishore -- 2019\n";
     return 0;
 }

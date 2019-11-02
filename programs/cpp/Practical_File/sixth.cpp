@@ -2,7 +2,7 @@
 #include<iostream>
 using namespace std;
 
-class Area
+class AreA
 {
     //Private Data Member
     private:
@@ -24,14 +24,14 @@ class Area
 int main()
 {
     //Creating first object and entering value in it
-    Area obj1;
+    AreA obj1;
     obj1.x = 20;
     obj1.areaX();
     //Creating another object and passing value through
     //argument of function areaY
-    Area obj2;
+    AreA obj2;
     obj2.areaY(20);
-    cout<< "\nCreated by Jugal Kishore -- 2019\n\n";
+    cout<< "\nCreated by Jugal Kishore -- 2019\n";
     return 0;
 }
 
