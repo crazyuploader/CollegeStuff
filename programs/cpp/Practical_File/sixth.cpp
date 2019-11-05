@@ -34,4 +34,3 @@ int main()
     cout<< "\nCreated by Jugal Kishore -- 2019\n";
     return 0;
 }
-

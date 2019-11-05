@@ -5,19 +5,19 @@ using namespace std;
 class Area
 {
     public:
-        int area;
-        //First Constructor with not argument
-        Area()
-        {
-            area=10*10;
-            cout<< "Area of Square is = "<< area<< endl;
-        }
-        //Second Constructor with argument
-        Area(int a)
-        {
-            area=a*a;
-            cout<< "Area of Square is = "<< area<< endl;
-        }
+    int area;
+    //First Constructor with not argument
+    Area()
+    {
+        area=10*10;
+        cout<< "Area of Square is = "<< area<< endl;
+    }
+    //Second Constructor with argument
+    Area(int a)
+    {
+        area=a*a;
+        cout<< "Area of Square is = "<< area<< endl;
+    }
 };
 
 int main()
