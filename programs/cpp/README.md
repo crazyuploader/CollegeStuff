@@ -90,3 +90,6 @@ Just a collection of my C++ Programs
 * Program to Show Greatest Number
 * Greater from 2 Entered Number(s)
 * Greatest from 3 Entered Number(s)
+
+<b>trick.cpp</b>
+* A little math game ;p
