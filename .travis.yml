@@ -1,3 +1,5 @@
+dist: bionic
+language: bash
 jobs:
   include:
     - stage: C
