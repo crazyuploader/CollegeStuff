@@ -1,8 +1,9 @@
-dist: bionic
-language: bash
 jobs:
   include:
-    - stage: Build for C
+    - stage: C Build
       script: for f in $(ls programs/c/*.c); do echo "Compiling $f"; g++ $f; done
-    - stage: Build for C++
-      script: for f in $(ls programs/cpp/Practical_File/*.cpp); do echo "Compiling $f"; g++ $f; done
+    - stage: C++ Build
+      script: 
+      - for f in $(ls programs/cpp/*.cpp); do echo "Compiling $f"; g++ $f; done
+      - for f in $(ls programs/cpp/Practical_File/*.cpp); do echo "Compiling $f"; g++ $f; done
+      - for f in $(ls programs/cpp/Practical_File/concat/*.cpp); do echo "Compiling $f"; g++ $f; done
