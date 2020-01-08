@@ -1,5 +1,3 @@
-dist: bionic
-language: bash
 jobs:
   include:
     - stage: Build for C
