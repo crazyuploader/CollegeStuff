@@ -1,7 +1,7 @@
 Hey there! Welcome to my GitHub 'CollegeStuff' repository, where you can find all the programming languages I work on.
 ---
 
-[![Build Status](https://travis-ci.org/crazyuploader/CollegeStuff.svg?branch=master)](https://travis-ci.org/crazyuploader/CollegeStuff)
+[![Build Status](https://travis-ci.org/crazyuploader/CollegeStuff.svg?branch=master)](https://travis-ci.org/crazyuploader/CollegeStuff) ![](https://github.com/crazyuploader/CollegeStuff/workflows/Builds/badge.svg?branch=master)
 
 Currently I have –
 
