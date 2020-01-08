@@ -1,9 +1,7 @@
-language:
-- c
-- cpp
-compiler: g++
-script:
-- for f in $(ls programs/cpp/*.cpp); do echo "Compiling $f"; g++ $f; done
-- for f in $(ls programs/c/*.c); do echo "Compiling $f"; g++ $f; done
-- for f in $(ls programs/cpp/Practical_File/*.cpp); do echo "Compiling $f"; g++ $f; done
-- for f in $(ls programs/cpp/Practical_File/concat/*.cpp); do echo "Compiling $f"; g++ $f; done
+language: bash
+jobs:
+  include:
+    - stage: C
+      script: cd programs/c && bash build_all.sh
+    - stage: C++
+      script: cd programs/cpp && bash build_all.sh
