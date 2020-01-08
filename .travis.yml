@@ -1,10 +1,6 @@
 jobs:
   include:
-    - stage: C Build
-      script: for f in $(ls programs/c/*.c); do echo "Compiling $f"; g++ $f; done
-    - stage: C++ Build
-      script: 
-      - clear
-      - for f in $(ls programs/cpp/*.cpp); do echo "Compiling $f"; g++ $f; done
-      - for f in $(ls programs/cpp/Practical_File/*.cpp); do echo "Compiling $f"; g++ $f; done
-      - for f in $(ls programs/cpp/Practical_File/concat/*.cpp); do echo "Compiling $f"; g++ $f; done
+    - stage: C
+      script: cd programs/c && bash build_all.sh
+    - stage: C++
+      script: cd programs/cpp && bash build_all.sh

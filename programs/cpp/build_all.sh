@@ -1,3 +1,4 @@
+#!bin/bash
 echo ""
 echo "Compiling with G++"
 echo ""
