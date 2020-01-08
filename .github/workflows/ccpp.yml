@@ -9,8 +9,6 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: configure
-      run: ./configure
     - name: C Build
       run: cd programs/c && bash build_all.sh
     - name: C++
