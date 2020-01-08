@@ -11,5 +11,5 @@ jobs:
     - uses: actions/checkout@v1
     - name: C Build
       run: cd programs/c && bash build_all.sh
-    - name: C++
+    - name: C++ Build
       run: cd programs/cpp && bash build_all.sh
