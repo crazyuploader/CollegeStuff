@@ -1,4 +1,5 @@
-#!bin/bash
+#!/usr/bin/env bash
+
 echo ""
 echo "Compiling Programs with GCC"
 echo ""
