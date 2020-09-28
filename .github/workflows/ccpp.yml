@@ -4,12 +4,11 @@ on: [push, pull_request]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-    
+
     steps:
-    - uses: actions/checkout@v1
-    - name: C Build
-      run: cd programs/c && bash build_all.sh
-    - name: C++ Build
-      run: cd programs/cpp && bash build_all.sh
+      - uses: actions/checkout@v1
+      - name: C Build
+        run: cd programs/c && bash build_all.sh
+      - name: C++ Build
+        run: cd programs/cpp && bash build_all.sh
